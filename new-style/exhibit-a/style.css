@@ -85,11 +85,12 @@ p + p { margin-top: 14px; }
 }
 .quote-big .who { display: block; margin-top: 12px; font-size: .85rem; color: var(--ink-dim); font-weight: 400; }
 
-.risk { display: flex; gap: 18px; background: var(--card); border: 1px solid var(--card-edge); border-radius: 14px; padding: 24px; margin-top: 16px; }
-.risk .step-num { font-size: 1.6rem; font-weight: 700; color: var(--bad); min-width: 2ch; }
-.risk h3 { color: var(--ink); }
-.risk p { color: var(--ink-dim); font-size: .97rem; margin-top: 6px; }
-.risk .said { color: var(--ink); font-style: italic; }
+.step-card { display: flex; gap: 18px; background: var(--card); border: 1px solid var(--card-edge); border-radius: 14px; padding: 24px; margin-top: 16px; }
+.step-card .step-num { font-size: 1.6rem; font-weight: 700; color: var(--bad); min-width: 2ch; }
+.step-card--volt .step-num { color: var(--volt); }
+.step-card h3 { color: var(--ink); }
+.step-card p { color: var(--ink-dim); font-size: .97rem; margin-top: 6px; }
+.step-card .said { color: var(--ink); font-style: italic; }
 
 .chain { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 32px 0; }
 .chain .link {
@@ -249,7 +250,7 @@ details.deep .body > p { color: var(--ink-dim); font-size: .95rem; margin-top: 1
 footer { max-width: var(--max); margin: 0 auto; padding: 24px; color: var(--ink-dim); font-size: .8rem; border-top: 1px solid var(--card-edge); }
 @media (max-width: 720px) {
   .nav-steps a { font-size: .72rem; padding: 4px 7px; }
-  .risk { flex-direction: column; gap: 8px; }
+  .step-card { flex-direction: column; gap: 8px; }
 }
 
 /* ---------- unified system page ---------- */
