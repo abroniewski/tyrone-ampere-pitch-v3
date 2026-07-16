@@ -50,7 +50,26 @@ The agency case study provides high-value visual evidence for:
 
 ## Research constraint
 
-The official site served an automated verification loader to the research environment, so the current live pages could not be visually measured screen by screen. Exact current font files, logo masters, color specifications, breakpoints, and interaction timings remain approval items.
+The official site previously served an automated verification loader to some research environments. On **2026-07-16**, public theme assets (`global.css`, `app.js`, font preloads) were successfully retrieved from [amperealliance.ca](https://amperealliance.ca/) without copying licensed font files.
+
+Confirmed from live theme assets and Playwright browser validation:
+
+- **Font family:** General Sans (300, 400, 500).
+- **Sizing system:** `calc(N / var(--size) * var(--size-end))` with artboard references at 1440, 1200, 1024, and 392.
+- **Navigation:** desktop `header nav ul.f--navigation a` (12px/500); mobile overlay via `header .menu` → `header nav.active` (20px/400).
+- **Motion stack:** Lenis, Splitting.js, Alpine.js, Splide, InfiniteMarquee, countUp.js.
+- **Primary accent in CSS:** `#3D6DFF` (meta theme-color `#0340F8`).
+- **Secondary text:** `#C2C2C2` (browser-validated on body copy).
+
+Still requiring approval or direct visual comparison:
+
+- Licensed General Sans files for redistribution.
+- Official logo masters and clear-space rules.
+- Whether `#0340F8` or `#3D6DFF` is the canonical brand cobalt.
+- Exact homepage section order and photography treatment.
+- Reduced-motion behavior on the production site.
+
+See `reference/live-site-extraction.json` and `reference/manual-capture.json` for the full machine-readable capture.
 
 ## Reconstruction method
 
@@ -86,11 +105,10 @@ A useful Ampere-style page behaves like a current moving through a circuit:
 
 Until approved source assets or direct screenshots are available, do not describe these as official values:
 
-- Exact font family and font files.
-- Exact cobalt hex value on the current site.
+- Licensed font files for redistribution (family name is confirmed; files are not bundled).
 - Exact logo clear-space rules.
-- Exact current animation durations and easing curves.
-- Exact responsive breakpoints.
-- Exact page order inside the current homepage.
+- Canonical cobalt hex between `#0340F8` and `#3D6DFF`.
+- Exact homepage section order inside the current homepage.
+- Reduced-motion behavior on the production site.
 
 See `13-fidelity-matrix.md` for confidence levels and `14-calibration-protocol.md` for the final adjustment process.

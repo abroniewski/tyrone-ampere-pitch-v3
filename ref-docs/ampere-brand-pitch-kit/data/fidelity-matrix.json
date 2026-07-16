@@ -27,7 +27,7 @@
     {
       "element": "Thin neo-grotesk display type",
       "confidence": "high",
-      "action": "Request official typeface and license"
+      "action": "Use General Sans with licensed files"
     },
     {
       "element": "Compact neo-grotesk navigation",
@@ -72,32 +72,37 @@
     {
       "element": "Exact current cobalt value",
       "confidence": "medium",
-      "action": "Calibrate to approved token"
+      "action": "Confirm #0340F8 vs #3D6DFF against brand guidelines"
     },
     {
       "element": "Exact current font",
-      "confidence": "low",
-      "action": "Obtain licensed files"
+      "confidence": "high",
+      "action": "Obtain licensed General Sans WOFF2 files"
     },
     {
       "element": "Exact breakpoints",
-      "confidence": "low",
-      "action": "Tune through visual comparison"
+      "confidence": "high",
+      "action": "Use official artboard widths 1440/1200/1024/392"
     },
     {
       "element": "Exact header scroll behavior",
-      "confidence": "low",
-      "action": "Compare with a desktop and mobile recording"
+      "confidence": "high",
+      "action": "Implement scrollY>50 and direction-based hide"
     },
     {
       "element": "Exact reveal durations",
-      "confidence": "low",
-      "action": "Compare with a recording"
+      "confidence": "high",
+      "action": "Use extracted keyframe timings from live-site-extraction.json"
     },
     {
       "element": "Exact hover behavior",
-      "confidence": "low",
-      "action": "Compare with a recording"
+      "confidence": "medium",
+      "action": "Compare card and portfolio hovers with recordings"
+    },
+    {
+      "element": "Mobile navigation overlay",
+      "confidence": "high",
+      "action": "Use header .menu and header nav.active selectors"
     },
     {
       "element": "Current official photography treatment",

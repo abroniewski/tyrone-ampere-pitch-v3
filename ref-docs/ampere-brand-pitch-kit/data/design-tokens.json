@@ -1,18 +1,31 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "name": "Ampere brand-faithful pitch concept tokens",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "status": "unofficial-working-system",
   "notes": [
     "Values are working tokens reconstructed from public Ampere materials and an original implementation.",
-    "The exact licensed display face, official logo files, and approved color specification are not bundled.",
-    "Replace medium- and low-confidence values during the calibration protocol before public launch."
+    "Live-site typography, sizing, motion, and navigation were extracted from amperealliance.ca on 2026-07-16.",
+    "Browser-validated computed values are in reference/manual-capture.json (Playwright Chromium).",
+    "Official General Sans font files and logo masters are not bundled in this kit.",
+    "Replace medium- and low-confidence color values during the calibration protocol before public launch."
   ],
+  "liveSiteExtraction": {
+    "capturedAt": "2026-07-16",
+    "cssReference": "reference/live-site-extraction.json",
+    "browserValidation": "reference/manual-capture.json",
+    "captureScript": "reference/capture-live-site.mjs"
+  },
   "color": {
     "ink": {
-      "value": "#050505",
-      "role": "Primary dark canvas and text",
+      "value": "#000000",
+      "role": "Live-site page background",
       "confidence": "high"
+    },
+    "inkPitch": {
+      "value": "#050505",
+      "role": "Pitch-kit near-black canvas",
+      "confidence": "medium"
     },
     "carbon": {
       "value": "#101216",
@@ -40,8 +53,13 @@
       "confidence": "medium"
     },
     "silver": {
+      "value": "#C2C2C2",
+      "role": "Live-site secondary text (--silver)",
+      "confidence": "high"
+    },
+    "silverPitch": {
       "value": "#B9C4D8",
-      "role": "Cool supporting field",
+      "role": "Pitch-kit cool supporting field",
       "confidence": "medium"
     },
     "steel": {
@@ -50,8 +68,18 @@
       "confidence": "medium"
     },
     "electric": {
+      "value": "#3D6DFF",
+      "role": "Live-site accent (buttons, borders, bullets)",
+      "confidence": "high"
+    },
+    "electricMeta": {
+      "value": "#0340F8",
+      "role": "Meta theme-color",
+      "confidence": "high"
+    },
+    "electricPitch": {
       "value": "#063CFF",
-      "role": "Primary accent and action",
+      "role": "Pitch-kit electric cobalt from case-study sampling",
       "confidence": "medium"
     },
     "electricBright": {
@@ -103,21 +131,103 @@
     }
   },
   "typography": {
+    "official": {
+      "family": "General Sans",
+      "foundry": "Indian Type Foundry",
+      "cssAlias": "G",
+      "weights": [300, 400, 500],
+      "files": [
+        "GeneralSans-Light.woff2",
+        "GeneralSans-Regular.woff2",
+        "GeneralSans-Medium.woff2"
+      ],
+      "confidence": "high",
+      "licenseAction": "Obtain licensed WOFF2 files before production use."
+    },
     "families": {
       "display": {
-        "value": "Helvetica Neue, Nimbus Sans L, Helvetica, Arial, sans-serif",
-        "status": "fallback-stack",
-        "productionAction": "Replace with approved licensed neo-grotesk family."
+        "value": "General Sans, Helvetica Neue, Nimbus Sans L, Helvetica, Arial, sans-serif",
+        "status": "official-name-with-fallback-stack",
+        "productionAction": "Load licensed General Sans WOFF2 files."
       },
       "body": {
-        "value": "Inter, Helvetica Neue, Helvetica, Arial, sans-serif",
-        "status": "fallback-stack",
-        "productionAction": "Confirm approved body family and license."
+        "value": "General Sans, Inter, Helvetica Neue, Helvetica, Arial, sans-serif",
+        "status": "official-name-with-fallback-stack",
+        "productionAction": "Load licensed General Sans WOFF2 files."
       },
       "mono": {
         "value": "SFMono-Regular, Consolas, Liberation Mono, monospace",
         "status": "system-fallback"
       }
+    },
+    "officialSizingSystem": {
+      "formula": "calc(N / var(--size) * var(--size-end))",
+      "referenceWidths": {
+        "desktop": 1440,
+        "tabletWide": 1200,
+        "tablet": 1024,
+        "mobile": 392
+      },
+      "maxRenderedWidth": 1800,
+      "classes": {
+        "f--h1": { "designPx": 100, "weight": 300, "lineHeight": 0.95 },
+        "f--h1-small": { "designPx": 62, "weight": 300, "lineHeight": 1.1 },
+        "f--h2": { "designPx": 15, "weight": 400, "lineHeight": 1, "case": "uppercase" },
+        "f--h3": { "designPx": 100, "weight": 300, "lineHeight": 1.2 },
+        "f--h3-small": { "designPx": 48, "weight": 300, "lineHeight": 1.1 },
+        "f--h4": { "designPx": 30, "weight": 300, "lineHeight": 1.1 },
+        "f--navigation": { "designPx": 12, "weight": 500, "lineHeight": 1.1, "case": "uppercase" },
+        "f--navigation-mobile": { "designPx": 20, "weight": 400, "lineHeight": 1.1, "case": "uppercase", "breakpoint": "max-width: 1023px" },
+        "f--p": { "designPx": 16, "weight": 400, "lineHeight": 1.4 },
+        "f--p-small": { "designPx": 14, "weight": 400, "lineHeight": 1.4 },
+        "f--callout": { "designPx": 48, "weight": 300, "lineHeight": 1.1 },
+        "f--testimonial": { "designPx": 30, "weight": 300, "lineHeight": 1.1 },
+        "f--tag": { "designPx": 15, "weight": 400, "case": "uppercase" }
+      },
+      "confidence": "high"
+    },
+    "browserValidated": {
+      "capturedAt": "2026-07-16",
+      "viewports": {
+        "1440": {
+          "heroHeadline": { "fontSize": "100px", "fontWeight": "300", "lineHeight": "95px", "color": "#FFFFFF" },
+          "navLink": { "fontSize": "12px", "fontWeight": "500", "textTransform": "uppercase" },
+          "bodyCopy": { "fontSize": "16px", "fontWeight": "400", "lineHeight": "22.4px", "color": "#C2C2C2" }
+        },
+        "1024": {
+          "heroHeadline": { "fontSize": "85.33px", "fontWeight": "300", "lineHeight": "81.07px" },
+          "navLink": { "fontSize": "10.24px", "fontWeight": "500" }
+        },
+        "390": {
+          "heroHeadline": { "fontSize": "59.69px", "fontWeight": "300", "lineHeight": "56.71px" },
+          "navLink": { "fontSize": "19.90px", "fontWeight": "400", "textTransform": "uppercase", "requiresMenuOpen": true },
+          "bodyCopy": { "fontSize": "14.92px", "lineHeight": "20.89px" }
+        }
+      },
+      "confidence": "high"
+    },
+    "navigation": {
+      "desktop": {
+        "selector": "header nav ul.f--navigation a",
+        "breakpoint": "min-width: 1024px",
+        "display": "inline",
+        "fontSizeDesignPx": 12,
+        "fontWeight": 500,
+        "textTransform": "uppercase",
+        "transitionDuration": "250ms"
+      },
+      "mobile": {
+        "menuTriggerSelector": "header .menu",
+        "navPanelSelector": "header nav.active",
+        "linkSelector": "header nav ul.f--navigation a",
+        "breakpoint": "max-width: 1023px",
+        "fontSizeDesignPx": 20,
+        "fontWeight": 400,
+        "textTransform": "uppercase",
+        "panelBackground": "#000000",
+        "itemBorderColor": "#737373"
+      },
+      "confidence": "high"
     },
     "weights": {
       "thin": 200,
@@ -151,9 +261,9 @@
       "hero": {
         "family": "display",
         "size": "hero",
-        "weight": 200,
-        "lineHeight": 0.94,
-        "letterSpacing": "-0.052em",
+        "weight": 300,
+        "lineHeight": 0.95,
+        "letterSpacing": "normal",
         "case": "sentence"
       },
       "sectionDisplay": {
@@ -202,6 +312,14 @@
       "large": "1024px",
       "wide": "1440px",
       "ultra": "1888px"
+    },
+    "officialBreakpoints": {
+      "mobile": "767px",
+      "tablet": "1023px",
+      "tabletWide": "1199px",
+      "desktopCap": "1800px",
+      "hoverDesktop": "1025px",
+      "confidence": "high"
     }
   },
   "spacing": {
@@ -231,17 +349,43 @@
     "campaignMediaClip": "polygon(0 12%, 86% 0, 100% 72%, 76% 100%, 0 92%)"
   },
   "motion": {
+    "official": {
+      "libraries": ["Lenis", "Splitting.js", "Alpine.js", "Splide", "InfiniteMarquee", "countUp.js"],
+      "scroll": {
+        "engine": "Lenis",
+        "duration": 1.2,
+        "easing": "exponential-out approximation in app.js"
+      },
+      "inView": {
+        "class": "inview",
+        "rootMargin": "-100px"
+      },
+      "textSplitting": {
+        "charStagger": "calc(var(--char-index) * 0.01s)",
+        "lineStagger": "calc(var(--line-index) * 0.25s)"
+      },
+      "confidence": "high"
+    },
     "easing": {
+      "revealPrimary": "cubic-bezier(0.4, 0.5, 0, 1)",
+      "revealSecondary": "cubic-bezier(0.25, 0.1, 0.25, 1)",
       "outExpo": "cubic-bezier(0.16, 1, 0.3, 1)",
       "inOut": "cubic-bezier(0.76, 0, 0.24, 1)",
-      "linear": "linear"
+      "linear": "linear",
+      "ui": "ease"
     },
     "duration": {
+      "ui": "250ms",
       "fast": "180ms",
       "base": "420ms",
+      "fade": "1000ms",
+      "charReveal": "1200ms",
+      "lineReveal": "1200ms",
+      "fadeline": "1500ms",
       "slow": "900ms",
       "reveal": "1100ms",
-      "cardFill": "650ms"
+      "cardFill": "650ms",
+      "countUp": "5000ms"
     },
     "reveal": {
       "distance": "40px",
@@ -249,8 +393,10 @@
       "once": true
     },
     "stagger": {
-      "headlineMin": "90ms",
-      "headlineMax": "130ms"
+      "charStep": "10ms",
+      "lineStep": "250ms",
+      "headlineMin": "10ms",
+      "headlineMax": "10ms"
     },
     "parallax": {
       "minFactor": 0.04,

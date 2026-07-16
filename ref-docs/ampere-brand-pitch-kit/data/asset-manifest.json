@@ -128,7 +128,18 @@
             "web typography"
           ],
           "rightsOwner": "Font licensor or Ampere Alliance",
-          "required": true
+          "required": true,
+          "discoveredOnLiveSite": {
+            "family": "General Sans",
+            "foundry": "Indian Type Foundry",
+            "weights": [300, 400, 500],
+            "files": [
+              "GeneralSans-Light.woff2",
+              "GeneralSans-Regular.woff2",
+              "GeneralSans-Medium.woff2"
+            ],
+            "capturedAt": "2026-07-16"
+          }
         },
         {
           "id": "brand-guidelines",

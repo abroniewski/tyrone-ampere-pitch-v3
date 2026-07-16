@@ -1,0 +1,455 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "Ampere Alliance live site extraction",
+  "capturedAt": "2026-07-16",
+  "source": {
+    "homepage": "https://amperealliance.ca/",
+    "globalCss": "https://amperealliance.ca/wp-content/themes/theme/assets/css/global.css?ver=1.0.35",
+    "appJs": "https://amperealliance.ca/wp-content/themes/theme/assets/js/app.js?ver=1.0.35",
+    "themeVersion": "1.0.35",
+    "extractionMethod": "Public HTML, theme CSS/JS download, and Playwright browser validation. No font files copied."
+  },
+  "browserValidation": {
+    "capturedAt": "2026-07-16",
+    "reference": "manual-capture.json",
+    "captureScript": "capture-live-site.mjs",
+    "method": "Playwright Chromium headless at 1440, 1024, and 390 viewports"
+  },
+  "meta": {
+    "themeColor": "#0340F8",
+    "tileColor": "#0340F8",
+    "title": "Ampere Alliance — The Next Generation of Power"
+  },
+  "fonts": {
+    "familyName": "General Sans",
+    "cssAlias": "G",
+    "foundry": "Indian Type Foundry",
+    "weights": [
+      {
+        "weight": 300,
+        "file": "GeneralSans-Light.woff2",
+        "url": "https://amperealliance.ca/wp-content/themes/theme/assets/fonts/GeneralSans-Light.woff2"
+      },
+      {
+        "weight": 400,
+        "file": "GeneralSans-Regular.woff2",
+        "url": "https://amperealliance.ca/wp-content/themes/theme/assets/fonts/GeneralSans-Regular.woff2"
+      },
+      {
+        "weight": 500,
+        "file": "GeneralSans-Medium.woff2",
+        "url": "https://amperealliance.ca/wp-content/themes/theme/assets/fonts/GeneralSans-Medium.woff2"
+      }
+    ],
+    "stack": "\"G\", Helvetica, Arial, sans-serif",
+    "smoothing": "antialiased",
+    "ligatures": "none"
+  },
+  "sizingSystem": {
+    "formula": "calc(N / var(--size) * var(--size-end))",
+    "description": "Fluid pixel values scale from a reference artboard width to the current viewport.",
+    "variables": {
+      "--size": "Reference artboard width in px",
+      "--size-end": "Target width, usually 100vw with an 1800px cap on very wide screens"
+    },
+    "breakpoints": [
+      {
+        "query": "default",
+        "size": 1440,
+        "sizeEnd": "100vw"
+      },
+      {
+        "query": "min-width: 1800px",
+        "size": 1440,
+        "sizeEnd": "1800px"
+      },
+      {
+        "query": "max-width: 1199px",
+        "size": 1200,
+        "sizeEnd": "100vw"
+      },
+      {
+        "query": "max-width: 1023px",
+        "size": 1024,
+        "sizeEnd": "100vw"
+      },
+      {
+        "query": "max-width: 767px",
+        "size": 392,
+        "sizeEnd": "100vw"
+      }
+    ],
+    "hoverBreakpoint": "min-width: 1025px"
+  },
+  "typography": {
+    "classes": [
+      {
+        "class": "f--h1",
+        "weight": 300,
+        "designPx": 100,
+        "lineHeight": "95%",
+        "responsive": [{ "query": "max-width: 767px", "designPx": 60 }]
+      },
+      {
+        "class": "f--h1-small",
+        "weight": 300,
+        "designPx": 62,
+        "lineHeight": "110%",
+        "responsive": [{ "query": "max-width: 767px", "designPx": 30 }]
+      },
+      {
+        "class": "f--h2",
+        "weight": 400,
+        "designPx": 15,
+        "lineHeight": "100%",
+        "textTransform": "uppercase",
+        "color": "var(--silver)",
+        "responsive": [{ "query": "max-width: 767px", "designPx": 14 }]
+      },
+      {
+        "class": "f--h3",
+        "weight": 300,
+        "designPx": 100,
+        "lineHeight": "120%",
+        "responsive": [
+          { "query": "max-width: 1199px", "designPx": 80 },
+          { "query": "max-width: 1023px", "designPx": 60 },
+          { "query": "max-width: 767px", "designPx": 40, "lineHeight": "110%" }
+        ]
+      },
+      {
+        "class": "f--h3-small",
+        "weight": 300,
+        "designPx": 48,
+        "lineHeight": "110%",
+        "responsive": [{ "query": "max-width: 767px", "designPx": 40 }]
+      },
+      {
+        "class": "f--h4",
+        "weight": 300,
+        "designPx": 30,
+        "lineHeight": "110%",
+        "responsive": [
+          { "query": "max-width: 1199px", "designPx": 24 },
+          { "query": "max-width: 767px", "designPx": 22 }
+        ]
+      },
+      {
+        "class": "f--navigation",
+        "weight": 500,
+        "designPx": 12,
+        "lineHeight": "110%",
+        "textTransform": "uppercase",
+        "color": "#FFFFFF"
+      },
+      {
+        "class": "f--p",
+        "weight": 400,
+        "designPx": 16,
+        "lineHeight": "140%",
+        "color": "var(--silver)"
+      },
+      {
+        "class": "f--p-small",
+        "weight": 400,
+        "designPx": 14,
+        "lineHeight": "140%",
+        "color": "var(--silver)"
+      },
+      {
+        "class": "f--callout",
+        "weight": 300,
+        "designPx": 48,
+        "lineHeight": "110%",
+        "responsive": [{ "query": "max-width: 767px", "designPx": 28 }]
+      },
+      {
+        "class": "f--testimonial",
+        "weight": 300,
+        "designPx": 30,
+        "lineHeight": "110%",
+        "responsive": [{ "query": "max-width: 767px", "designPx": 22 }]
+      },
+      {
+        "class": "f--tag",
+        "weight": 400,
+        "designPx": 15,
+        "textTransform": "uppercase",
+        "color": "var(--silver)",
+        "responsive": [{ "query": "max-width: 767px", "designPx": 14 }]
+      },
+      {
+        "class": "body default",
+        "weight": 400,
+        "designPx": 16,
+        "color": "#FFFFFF"
+      },
+      {
+        "class": "btn-acc",
+        "weight": 400,
+        "designPx": 13,
+        "textTransform": "uppercase",
+        "color": "#FFFFFF"
+      }
+    ],
+    "computedAt1440": {
+      "f--h1": "100px",
+      "f--h1-small": "62px",
+      "f--h2": "15px",
+      "f--h3": "100px",
+      "f--h3-small": "48px",
+      "f--h4": "30px",
+      "f--navigation": "12px",
+      "f--p": "16px",
+      "f--p-small": "14px",
+      "f--callout": "48px",
+      "f--testimonial": "30px",
+      "f--tag": "15px"
+    },
+    "computedAt1800": {
+      "f--h1": "125px",
+      "f--h3": "125px"
+    },
+    "computedAtMobile392": {
+      "f--h1": "59.69px",
+      "f--h1-cssRule": "60px",
+      "f--h1-small": "30px",
+      "f--h3": "40px",
+      "f--navigation-mobile": "19.90px"
+    }
+  },
+  "navigation": {
+    "desktop": {
+      "linkSelector": "header nav ul.f--navigation a",
+      "listSelector": "header nav ul.f--navigation",
+      "breakpoint": "min-width: 1024px",
+      "menuTriggerHidden": "header .menu { display: none }",
+      "fontClass": "f--navigation",
+      "designPx": 12,
+      "fontWeight": 500,
+      "textTransform": "uppercase",
+      "transitionDuration": "250ms",
+      "browserValidatedAt1440": {
+        "fontSize": "12px",
+        "fontWeight": "500"
+      }
+    },
+    "mobile": {
+      "menuTriggerSelector": "header .menu",
+      "navPanelSelector": "header nav",
+      "navPanelActiveSelector": "header nav.active",
+      "linkSelector": "header nav ul.f--navigation a",
+      "closeSelector": "header nav .close",
+      "breakpoint": "max-width: 1023px",
+      "panelDisplayWhenActive": "flex",
+      "panelBackground": "#000000",
+      "itemBorderColor": "#737373",
+      "fontSizeRule": "calc(20 / var(--size) * var(--size-end))",
+      "fontWeight": 400,
+      "textTransform": "uppercase",
+      "requiresMenuOpenForCapture": true,
+      "browserValidatedAt390": {
+        "fontSize": "19.898px",
+        "fontWeight": "400",
+        "navPanelClasses": ["active"]
+      }
+    },
+    "items": ["About", "Portfolio", "Approach", "Insights", "Contact"]
+  },
+  "colors": {
+    "observedInThemeCss": {
+      "background": "#000000",
+      "bodyText": "#FFFFFF",
+      "silver": "#C2C2C2",
+      "accentBlue": "#3D6DFF",
+      "metaThemeBlue": "#0340F8",
+      "mutedGray": "#737373",
+      "borderLight": "#EEEEEE"
+    },
+    "notes": [
+      "Accent blue #3D6DFF is used for buttons, borders, marquee bullets, and slider hover fills.",
+      "Meta theme-color #0340F8 may be the canonical brand blue; confirm against approved brand guidelines."
+    ]
+  },
+  "motion": {
+    "libraries": [
+      "Lenis smooth scroll",
+      "Splitting.js text splitting",
+      "Alpine.js component layer",
+      "Splide carousel",
+      "InfiniteMarquee",
+      "countUp.js"
+    ],
+    "scroll": {
+      "engine": "Lenis",
+      "duration": 1.2,
+      "easing": "Math.min(1, 1.001 - Math.pow(2, -10 * t))",
+      "smoothWheel": true,
+      "smoothTouch": false,
+      "wheelMultiplier": 1,
+      "infinite": false
+    },
+    "inView": {
+      "triggerClass": "inview",
+      "observerRootMargin": "-100px",
+      "observeOnce": true
+    },
+    "easingCurves": {
+      "revealPrimary": "cubic-bezier(0.4, 0.5, 0, 1)",
+      "revealSecondary": "cubic-bezier(0.25, 0.1, 0.25, 1)",
+      "uiFast": "ease",
+      "pageIn": "ease-in"
+    },
+    "durations": {
+      "ui": "250ms",
+      "fade": "1000ms",
+      "charReveal": "1200ms",
+      "lineReveal": "1200ms",
+      "fadeline": "1500ms",
+      "headlineAccent": "1000ms",
+      "headlineRule": "1500ms",
+      "pageTransitionOut": "250ms",
+      "pageTransitionIn": "250ms",
+      "accordion": "500ms",
+      "sliderHover": "250ms",
+      "countUp": "5000ms"
+    },
+    "keyframes": {
+      "down": {
+        "from": "translateY(102%)",
+        "to": "none",
+        "duration": "1.2s",
+        "easing": "cubic-bezier(0.4, 0.5, 0, 1)"
+      },
+      "fadedown": {
+        "from": "translateY(25px), opacity 0",
+        "to": "none, opacity 1",
+        "duration": "1s",
+        "easing": "cubic-bezier(0.25, 0.1, 0.25, 1)"
+      },
+      "fadeline": {
+        "from": "translateY(105%)",
+        "to": "none",
+        "duration": "1.5s",
+        "easing": "cubic-bezier(0.4, 0.5, 0, 1)"
+      },
+      "fadeup": {
+        "from": "translateY(-25px), opacity 0",
+        "to": "none, opacity 1",
+        "duration": "1s",
+        "easing": "cubic-bezier(0.25, 0.1, 0.25, 1)"
+      },
+      "fadeleft": {
+        "from": "translateX(-25px), opacity 0",
+        "to": "none, opacity 1",
+        "duration": "1s",
+        "easing": "cubic-bezier(0.25, 0.1, 0.25, 1)",
+        "mobileOverride": "translateY(25px) below 1023px"
+      },
+      "faderight": {
+        "from": "translateX(25px), opacity 0",
+        "to": "none, opacity 1",
+        "duration": "1s",
+        "easing": "cubic-bezier(0.25, 0.1, 0.25, 1)"
+      },
+      "fade": {
+        "from": "opacity 0",
+        "to": "opacity 1",
+        "duration": "1s",
+        "easing": "cubic-bezier(0.25, 0.1, 0.25, 1)"
+      },
+      "width": {
+        "from": "width 0 or 1%",
+        "to": "width 100%",
+        "duration": "1s",
+        "easing": "cubic-bezier(0.25, 0.1, 0.25, 1)"
+      },
+      "horizontal-marquee": {
+        "timing": "linear infinite",
+        "speedVariable": "--_speed"
+      },
+      "vertical-marquee": {
+        "timing": "linear infinite",
+        "speedVariable": "--_speed"
+      },
+      "animateIn": {
+        "from": "opacity 0",
+        "to": "opacity 1",
+        "duration": "0.25s",
+        "easing": "ease-in"
+      }
+    },
+    "textSplitting": {
+      "chars": {
+        "initial": "translateY(110%)",
+        "inViewAnimation": "down",
+        "stagger": "calc(var(--char-index) * 0.01s)"
+      },
+      "lines": {
+        "initial": "translateY(102%), opacity 0",
+        "inViewAnimation": "fadedown",
+        "stagger": "calc(var(--line-index) * 0.25s)"
+      }
+    },
+    "utilityClasses": {
+      "initialStates": [
+        "t--fade",
+        "t--fadedown",
+        "t--fadeline",
+        "t--fadeup",
+        "t--fadeleft",
+        "t--faderight"
+      ],
+      "delaysMs": [250, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500]
+    },
+    "marquee": {
+      "component": "InfiniteMarquee",
+      "defaultDuplicateCount": 2,
+      "defaultPauseOnHover": true,
+      "defaultDirection": "left",
+      "speedFormula": "1500 * multiplier"
+    },
+    "parallax": {
+      "attribute": "data-power",
+      "defaultPower": 1,
+      "method": "scroll-linked translateY on Alpine parallax component"
+    },
+    "header": {
+      "scrollClassThreshold": 50,
+      "hideOnScrollDown": true,
+      "showOnScrollUp": true
+    },
+    "pageTransition": {
+      "outClass": "animate-out",
+      "outDuration": "250ms",
+      "outProperty": "opacity"
+    },
+    "counterStagger": {
+      "childDelay": "index / 8 seconds",
+      "countUpStartDelay": "index / 8 * 1000 + 250 ms"
+    }
+  },
+  "stylesheets": [
+    "https://amperealliance.ca/wp-content/themes/theme/assets/css/global.css?ver=1.0.35",
+    "https://amperealliance.ca/wp-content/themes/theme/assets/css/main.css?ver=1.0.35",
+    "https://amperealliance.ca/wp-content/themes/theme/assets/css/text.css?ver=1.0.35",
+    "https://amperealliance.ca/wp-content/themes/theme/assets/css/diff.css?ver=1.0.35",
+    "https://amperealliance.ca/wp-content/themes/theme/assets/css/partners.css?ver=1.0.35",
+    "https://amperealliance.ca/wp-content/themes/theme/assets/css/testimonials.css?ver=1.0.35",
+    "https://amperealliance.ca/wp-content/themes/theme/assets/css/team.css?ver=1.0.35",
+    "https://amperealliance.ca/wp-content/themes/theme/assets/css/news.css?ver=1.0.35",
+    "https://amperealliance.ca/wp-content/themes/theme/assets/css/growth.css?ver=1.0.35"
+  ],
+  "staticAssets": {
+    "favicon": "https://amperealliance.ca/wp-content/themes/theme/assets/img/favicon.png",
+    "buttonIcon": "https://amperealliance.ca/wp-content/themes/theme/assets/img/button.svg",
+    "noiseTexture": "https://amperealliance.ca/wp-content/themes/theme/assets/img/noise.png",
+    "socialShare": "https://amperealliance.ca/wp-content/uploads/2025/12/Social-Share-Image.png"
+  },
+  "scripts": [
+    "https://amperealliance.ca/wp-content/themes/theme/assets/js/lib.js?ver=1.0.35",
+    "https://amperealliance.ca/wp-content/themes/theme/assets/js/alpine.js?ver=1.0.35",
+    "https://amperealliance.ca/wp-content/themes/theme/assets/js/app.js?ver=1.0.35",
+    "https://amperealliance.ca/wp-content/themes/theme/assets/js/cookies.js?ver=1.0.35"
+  ]
+}

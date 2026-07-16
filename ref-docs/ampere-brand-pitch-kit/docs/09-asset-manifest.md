@@ -13,7 +13,7 @@ The machine-readable version is in `data/asset-manifest.json`.
 - Blue logo, if approved.
 - Favicon SVG and PNG set.
 - Official brand-color specification.
-- Official font names, weights, licenses, and webfont formats.
+- Official font names, weights, licenses, and webfont formats. **Live site confirmed General Sans 300/400/500 on 2026-07-16** — see `reference/live-site-extraction.json`.
 - Clear-space and minimum-size rules.
 
 ### Portfolio identity

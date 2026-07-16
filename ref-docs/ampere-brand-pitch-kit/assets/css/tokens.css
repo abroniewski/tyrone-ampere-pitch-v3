@@ -1,14 +1,18 @@
 :root {
-  /* Color system. Electric cobalt and icy gray are measured from public case-study imagery. */
-  --color-ink: #050505;
+  /* Color system. Live site uses #000, #C2C2C2, #3D6DFF. Pitch-kit cobalt retained as alternate. */
+  --color-ink: #000000;
+  --color-ink-pitch: #050505;
   --color-carbon: #101216;
   --color-carbon-soft: #171a20;
   --color-paper: #f5f6f7;
   --color-white: #ffffff;
   --color-mist: #e3e9f1;
-  --color-silver: #b9c4d8;
+  --color-silver: #c2c2c2;
+  --color-silver-pitch: #b9c4d8;
   --color-steel: #7d8595;
-  --color-electric: #063cff;
+  --color-electric: #3d6dff;
+  --color-electric-meta: #0340f8;
+  --color-electric-pitch: #063cff;
   --color-electric-bright: #1358ff;
   --color-electric-deep: #0029c8;
   --color-line-dark: rgba(5, 5, 5, 0.18);
@@ -19,9 +23,9 @@
   --gradient-electric-soft: linear-gradient(135deg, rgba(6, 60, 255, 0.98), rgba(77, 101, 180, 0.72) 58%, rgba(207, 214, 228, 0.94));
   --gradient-ink: linear-gradient(180deg, #050505, #111318);
 
-  /* Typography. The exact licensed face is not bundled. */
-  --font-display: "Helvetica Neue", "Nimbus Sans L", Helvetica, Arial, sans-serif;
-  --font-body: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* Typography. Live site uses General Sans (not bundled). Fallback stacks below. */
+  --font-display: "General Sans", "Helvetica Neue", "Nimbus Sans L", Helvetica, Arial, sans-serif;
+  --font-body: "General Sans", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
   --font-weight-thin: 200;
   --font-weight-light: 300;

@@ -2,24 +2,42 @@
 
 ## Global header
 
+Validated against live site on 2026-07-16. Selectors: `reference/live-site-extraction.json` → `navigation`.
+
 ### Anatomy
 
-- Angular symbol plus light wordmark.
-- Optional `Pitch concept` qualifier during review.
-- Compact primary navigation.
-- Rectangular cobalt CTA.
-- Mobile menu trigger composed of two thin horizontal lines.
+- SVG wordmark (`a.logo-text`) plus angular symbol in mobile overlay.
+- Primary navigation in `header nav ul.f--navigation`.
+- Hamburger trigger: `header .menu` (three-line SVG, visible below 1024px).
+- Mobile close control: `header nav .close`.
+
+### Desktop navigation (1024px and above)
+
+- Selector: `header nav ul.f--navigation a`
+- 12px General Sans Medium (500), uppercase, white.
+- Inline horizontal layout; hamburger hidden.
+- 250ms transition on link states.
+- Hover (1025px+): text shifts to silver (`#C2C2C2`).
+
+### Mobile navigation (1023px and below)
+
+- Tap `header .menu` to open full-screen overlay: `header nav.active`
+- Panel: black background, 100vh, flex column.
+- Links: `header nav ul.f--navigation a`
+- 20px design size (~19.9px at 390px viewport), weight 400, uppercase, centered with arrow cue.
+- List items separated by `#737373` top borders.
+- Social links and “Follow Us” label in panel footer.
 
 ### Behavior
 
-- Transparent over the hero.
-- Becomes near-black with subtle blur and a one-pixel lower rule after 24 pixels of scroll.
-- Remains fixed.
-- Mobile menu opens as a full cobalt field.
+- Fixed header; hides on scroll down (`.off`), returns on scroll up.
+- Adds `.scroll` background after 50px scrollY.
+- Below 768px scrolled state uses semi-transparent black with blur.
+- Logo wordmark fades on tablet/mobile header; symbol shows in open menu.
 
 ### Content limits
 
-- Five primary navigation items plus one CTA.
+- Five primary navigation items (About, Portfolio, Approach, Insights, Contact).
 - Navigation labels should remain one word when practical.
 
 ## Hero

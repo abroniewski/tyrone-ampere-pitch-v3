@@ -2,6 +2,24 @@
 
 This folder intentionally contains no copied agency screenshots or official brand assets.
 
+## Live-site extraction (2026-07-16)
+
+Machine-readable capture from public theme assets and browser validation:
+
+- `live-site-extraction.json` — CSS/JS/HTML extraction
+- `live-site-extraction.md` — human-readable summary
+- `manual-capture.json` — Playwright computed-style validation
+- `manual-capture.md` — human-readable browser capture
+- `capture-live-site.mjs` — re-run script
+
+Re-run browser capture:
+
+```bash
+node ref-docs/ampere-brand-pitch-kit/reference/capture-live-site.mjs
+```
+
+## Public references
+
 Use these public references during review:
 
 - Official site: https://amperealliance.ca/
