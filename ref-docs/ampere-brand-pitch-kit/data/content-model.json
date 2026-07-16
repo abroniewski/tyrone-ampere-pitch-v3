@@ -1,0 +1,356 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "Ampere pitch site content model",
+  "version": "1.0.0",
+  "global": {
+    "siteSettings": [
+      "siteTitle",
+      "metaDescription",
+      "themeColor",
+      "defaultSocialImage",
+      "legalNotice",
+      "privacyLink"
+    ],
+    "navigation": {
+      "primaryMaxItems": 5,
+      "primaryFields": [
+        "label",
+        "href",
+        "currentState"
+      ],
+      "ctaFields": [
+        "label",
+        "href"
+      ]
+    },
+    "brand": [
+      "approvedLogoLight",
+      "approvedLogoDark",
+      "approvedSymbol",
+      "faviconSet"
+    ],
+    "contact": [
+      "generalEmail",
+      "partnershipEmail",
+      "careersEmail",
+      "officeLocations",
+      "socialProfiles"
+    ]
+  },
+  "sharedBlocks": {
+    "hero": {
+      "required": [
+        "kicker",
+        "headline",
+        "supportingCopy",
+        "theme"
+      ],
+      "optional": [
+        "primaryAction",
+        "secondaryAction",
+        "media",
+        "coordinateLabel",
+        "scrollLabel"
+      ],
+      "constraints": {
+        "headlineMaxWords": 9,
+        "supportingCopyMaxWords": 40,
+        "actionsMax": 2
+      }
+    },
+    "sectionHeader": {
+      "required": [
+        "kicker",
+        "headline"
+      ],
+      "optional": [
+        "sectionNumber",
+        "asideCopy"
+      ],
+      "constraints": {
+        "asideCopyMaxWords": 45
+      }
+    },
+    "systemCard": {
+      "required": [
+        "index",
+        "title",
+        "body"
+      ],
+      "optional": [
+        "eyebrow",
+        "href"
+      ],
+      "constraints": {
+        "titleMaxWords": 6,
+        "bodyMaxWords": 35
+      }
+    },
+    "campaignCard": {
+      "required": [
+        "title",
+        "category",
+        "image"
+      ],
+      "optional": [
+        "summary",
+        "year",
+        "href",
+        "result"
+      ],
+      "constraints": {
+        "titleMaxWords": 8,
+        "summaryMaxWords": 38
+      }
+    },
+    "stat": {
+      "required": [
+        "value",
+        "label"
+      ],
+      "optional": [
+        "prefix",
+        "suffix",
+        "source",
+        "period",
+        "approvedForPublication"
+      ],
+      "constraints": {
+        "labelMaxWords": 14
+      }
+    },
+    "timelinePhase": {
+      "required": [
+        "index",
+        "title",
+        "body"
+      ],
+      "optional": [
+        "duration",
+        "deliverables"
+      ],
+      "constraints": {
+        "titleMaxWords": 3,
+        "bodyMaxWords": 42
+      }
+    },
+    "portfolioCompany": {
+      "required": [
+        "name",
+        "sector",
+        "status",
+        "logo"
+      ],
+      "optional": [
+        "location",
+        "partnershipYear",
+        "summary",
+        "featuredImage",
+        "detailPage",
+        "metrics"
+      ]
+    },
+    "insight": {
+      "required": [
+        "title",
+        "category",
+        "publishedDate",
+        "slug"
+      ],
+      "optional": [
+        "dek",
+        "readingTime",
+        "author",
+        "thumbnail",
+        "featured",
+        "body"
+      ],
+      "constraints": {
+        "titleMaxWords": 16,
+        "dekMaxWords": 42
+      }
+    },
+    "person": {
+      "required": [
+        "name",
+        "role",
+        "portrait"
+      ],
+      "optional": [
+        "bio",
+        "linkedinUrl",
+        "email"
+      ],
+      "constraints": {
+        "bioMaxWords": 90
+      }
+    },
+    "role": {
+      "required": [
+        "title",
+        "company",
+        "location",
+        "employmentType",
+        "applyUrl"
+      ],
+      "optional": [
+        "department",
+        "postedDate",
+        "summary",
+        "remoteStatus"
+      ]
+    },
+    "quote": {
+      "required": [
+        "text",
+        "attributionName"
+      ],
+      "optional": [
+        "attributionRole",
+        "company",
+        "source",
+        "approvedForPublication"
+      ],
+      "constraints": {
+        "textMaxWords": 48
+      }
+    },
+    "cta": {
+      "required": [
+        "headline",
+        "actionLabel",
+        "actionHref"
+      ],
+      "optional": [
+        "supportingCopy",
+        "theme"
+      ],
+      "constraints": {
+        "headlineMaxWords": 9,
+        "supportingCopyMaxWords": 32
+      }
+    }
+  },
+  "pages": {
+    "home": {
+      "route": "/",
+      "purpose": "Establish the alliance promise, prove the system, and drive one decisive action.",
+      "sections": [
+        "hero",
+        "manifesto",
+        "rhythmBand",
+        "strategicSystem",
+        "featuredWork",
+        "proofStats",
+        "rolloutTimeline",
+        "quote",
+        "insights",
+        "cta"
+      ]
+    },
+    "about": {
+      "route": "/about",
+      "purpose": "Explain ambition, origin, leadership, and operating culture.",
+      "sections": [
+        "hero",
+        "originStory",
+        "milestones",
+        "leadershipGrid",
+        "principles",
+        "cta"
+      ]
+    },
+    "approach": {
+      "route": "/approach",
+      "purpose": "Explain partnership thesis, process, and operator value.",
+      "sections": [
+        "hero",
+        "thesis",
+        "operatingPrinciples",
+        "process",
+        "portfolioProof",
+        "founderFAQ",
+        "cta"
+      ]
+    },
+    "portfolio": {
+      "route": "/portfolio",
+      "purpose": "Present the collective, companies, shared capabilities, and measurable outcomes.",
+      "sections": [
+        "hero",
+        "portfolioIndex",
+        "featuredCaseStudy",
+        "sharedCapabilities",
+        "performanceEvidence",
+        "cta"
+      ]
+    },
+    "portfolioDetail": {
+      "routePattern": "/portfolio/{slug}",
+      "purpose": "Tell one company growth story with context, intervention, evidence, and next horizon.",
+      "sections": [
+        "companyHero",
+        "prePartnershipContext",
+        "strategicIntervention",
+        "results",
+        "leadershipQuote",
+        "collectiveAdvantage",
+        "nextHorizon"
+      ]
+    },
+    "insights": {
+      "route": "/insights",
+      "purpose": "Demonstrate a point of view and sustain an editorial rhythm.",
+      "sections": [
+        "hero",
+        "featuredInsight",
+        "insightIndex",
+        "newsletter",
+        "cta"
+      ]
+    },
+    "careers": {
+      "route": "/careers",
+      "purpose": "Express culture, show real work, and route talent to open roles.",
+      "sections": [
+        "hero",
+        "cultureNarrative",
+        "peopleEvidence",
+        "roleIndex",
+        "generalInterest",
+        "cta"
+      ]
+    },
+    "contact": {
+      "route": "/contact",
+      "purpose": "Make it easy to start a relevant conversation without a maze of fields.",
+      "sections": [
+        "hero",
+        "expectationCopy",
+        "contactForm",
+        "directContacts",
+        "locations",
+        "legal"
+      ]
+    }
+  },
+  "editorialRules": {
+    "voice": [
+      "direct",
+      "ambitious",
+      "operator-aware",
+      "evidence-led",
+      "plainspoken"
+    ],
+    "avoid": [
+      "empty superlatives",
+      "stacked jargon",
+      "excessive exclamation marks",
+      "claims without evidence",
+      "generic sustainability language"
+    ],
+    "headlinePattern": "One clear strategic claim, usually 3 to 9 words.",
+    "proofRule": "Every performance claim should carry a source, period, owner, and approval status.",
+    "densityRule": "Alternate declaration, system, and evidence sections rather than repeating the same density."
+  }
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Supply Chain Signal — Issue 01 (draft)</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&family=Sofia+Sans:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #031441;
+    --navy-2: #010D2D;
+    --purple: #7622C9;
+    --purple-dim: #F2E7FE;
+    --teal: #6CC7B5;
+    --body-text: #2D303E;
+    --muted: #5F697F;
+    --line: #E7E5F3;
+    --paper: #FFFFFF;
+    --shell: #F1F1FE;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--shell);
+    font-family: 'Work Sans', system-ui, sans-serif;
+    color: var(--body-text);
+    line-height: 1.6;
+  }
+  .draft-flag {
+    background: var(--navy); color: #fff; text-align: center;
+    font-size: 12px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+    padding: 8px 12px;
+  }
+  .draft-flag span { color: var(--teal); }
+  .wrap { max-width: 620px; margin: 0 auto; background: var(--paper); }
+  .masthead { padding: 40px 40px 24px; text-align: center; border-bottom: 1px solid var(--line); }
+  .masthead img { height: 34px; margin-bottom: 22px; }
+  .masthead h1 {
+    font-family: 'Sofia Sans', sans-serif; font-weight: 900; font-size: 30px;
+    color: var(--navy); letter-spacing: -.01em;
+  }
+  .masthead .issue {
+    display: inline-block; margin-top: 10px; font-size: 12px; font-weight: 700;
+    letter-spacing: .12em; text-transform: uppercase; color: var(--purple);
+  }
+  .masthead .standfirst { margin-top: 14px; font-size: 15px; color: var(--muted); max-width: 46ch; margin-left: auto; margin-right: auto; }
+
+  .content { padding: 32px 40px 8px; }
+  .content p { font-size: 16px; margin-top: 14px; }
+  .content p:first-child { margin-top: 0; }
+  .lede-box {
+    margin-top: 22px; padding: 18px 20px; background: var(--purple-dim); border-radius: 10px;
+    font-size: 15.5px; color: var(--navy); font-weight: 500;
+  }
+
+  h2.section {
+    font-family: 'Sofia Sans', sans-serif; font-weight: 700; font-size: 21px;
+    color: var(--navy); margin-top: 40px; padding-top: 22px; border-top: 1px solid var(--line);
+  }
+  .steps { margin-top: 18px; }
+  .step { display: flex; gap: 14px; margin-top: 20px; }
+  .step .num {
+    flex: 0 0 auto; width: 26px; height: 26px; border-radius: 50%; background: var(--navy);
+    color: #fff; font-size: 13px; font-weight: 700; display: flex; align-items: center; justify-content: center;
+  }
+  .step .body h3 { font-size: 15.5px; color: var(--navy); }
+  .step .body p { font-size: 15px; margin-top: 4px; color: var(--body-text); }
+
+  .challenge { margin-top: 20px; }
+  .challenge h3 { font-size: 15.5px; color: var(--navy); }
+  .challenge p { font-size: 15px; margin-top: 4px; }
+
+  .konekti-box {
+    margin-top: 18px; padding: 22px 24px; background: var(--navy); color: #fff;
+    border-radius: 12px;
+  }
+  .konekti-box p { color: #DBDBFC; font-size: 15px; margin-top: 12px; }
+  .konekti-box p:first-of-type { margin-top: 0; }
+  .konekti-box .eyebrow { font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--teal); }
+  .img-slot {
+    margin-top: 16px; border: 1px dashed rgba(255,255,255,.35); border-radius: 10px;
+    padding: 26px; text-align: center; font-size: 12.5px; color: rgba(255,255,255,.6);
+    letter-spacing: .04em; text-transform: uppercase;
+  }
+
+  .cta { margin-top: 30px; padding: 20px 22px; border: 1px solid var(--line); border-radius: 12px; background: #FAFAFF; }
+  .cta p { font-size: 15.5px; }
+  .cta .reply { color: var(--purple); font-weight: 700; }
+
+  .signoff { margin-top: 28px; font-size: 16px; }
+  .signoff .name { font-weight: 700; color: var(--navy); }
+
+  .footer {
+    margin-top: 36px; padding: 22px 40px 36px; border-top: 1px solid var(--line);
+    font-size: 13px; color: var(--muted);
+  }
+  .footer .tagline { max-width: 52ch; }
+  .footer .ps { margin-top: 12px; }
+  .footer .unsub { margin-top: 16px; }
+  .footer a { color: var(--purple); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<div class="draft-flag">Draft &middot; Issue 01 &middot; not yet sent <span>&mdash; awaiting data-model image</span></div>
+
+<div class="wrap">
+  <div class="masthead">
+    <img src="konekti-logo.png" alt="Konekti">
+    <h1>The Supply Chain Signal</h1>
+    <span class="issue">Issue 01</span>
+    <p class="standfirst">A short newsletter for supply chain and ops leaders who want to get ahead of problems instead of firefighting them.</p>
+  </div>
+
+  <div class="content">
+    <p>In this issue: how supply chain leaders can catch a late order before it's late, and where the handoffs between planning, the warehouse, and suppliers cost you OTIF.</p>
+
+    <div class="lede-box">
+      Everyone knows an OTIF miss usually starts upstream. The more useful question is: what signals can we use to spot an issue coming in time to act? The thing I keep seeing with supply chain teams is that the first risk signal shows up way before the miss, on a record nobody's watching.
+    </div>
+
+    <p>Getting ahead of late orders isn't about a better delivery dashboard. It's about catching that signal while you still have options.</p>
+    <p>Here's the approach I share with leaders that makes it possible to tune into the signals that matter most, and the complications to watch out for along the way.</p>
+
+    <h2 class="section">The approach</h2>
+    <p>I see this play out the same way almost every time, so let's walk through one order.</p>
+    <p>An order for a top account is due to ship a week from this Friday. It needs one purchased component. The supplier confirmed, within their standard 48-hour SLA, a receipt date of the Tuesday before ship day. That leaves three working days of buffer before the truck needs to leave.</p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <div class="body">
+          <h3>Decide what "at risk" means before the order is late.</h3>
+          <p>Tuesday comes and goes. No receipt. It's now Thursday, two days late against the confirmed date, and one day before Friday's 16:00 carrier cutoff. That's the first risk signal, a full day before anything on a report says "late." Your team can already rattle off several signals like this: a late supplier receipt on a needed component, a promise date changed after confirmation, a pick that won't make the carrier cutoff.</p>
+          <p>The signals worth acting on are almost always a combination of things: an event, its timing relative to the order, and what else is already going on with that order.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <div class="body">
+          <h3>Connect the events that carry the signal.</h3>
+          <p>By Thursday afternoon, the missing receipt is a hole in the inventory allocation. The pick can't happen. The purchase order, the supplier confirmation, the allocation, and the pick each sit in a different system. None of them says "Friday's shipment is at risk" on its own. The signal only appears when you can see them as one timeline for that order.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <div class="body">
+          <h3>Watch it while there's still time to act.</h3>
+          <p>Seen this Thursday morning, ahead of the 16:00 cutoff, and someone can expedite the part, substitute a lot, or reset the promise before the customer finds out the hard way. Wait for the month-end OTIF review, and the same information just explains what already went wrong. The risk needs to get surfaced for the people on your team who can take proactive action before it becomes a consequence.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="section">Challenges to watch for</h2>
+
+    <div class="challenge">
+      <h3>The question won't hold still.</h3>
+      <p>Today it's late orders, next week it's a supplier, next month a plant. If each new question means rebuilding the data pipeline all over again, momentum stalls and ROI is questioned. What you want is a reusable model of how your operation runs, one you extend instead of rebuild every time the question changes.</p>
+    </div>
+    <div class="challenge">
+      <h3>You have to be able to see the logic.</h3>
+      <p>If "at risk" is defined inside one person's SQL code running behind the scenes, your team can't see how the call was made, can't challenge it, and won't act on it. Trust is vital, and people don't move on a number they can't interrogate. The logic that flags risk has to be visible and inspectable, or it won't change what anyone does on Monday.</p>
+    </div>
+    <div class="challenge">
+      <h3>There's never just one failure mode.</h3>
+      <p>There are dozens, and they shift week to week. A fixed checklist catches the problems you already thought of and misses the ones you didn't. To stay ahead, your system needs to keep surfacing new patterns as they emerge. I worked with a team that used a static list updated at a quarterly review. It just wasn't able to keep up with the business.</p>
+    </div>
+    <div class="challenge">
+      <h3>AI can be confidently&hellip; wrong.</h3>
+      <p>AI helps teams go broader, deeper, and faster than anyone working by hand. But large language models like OpenAI's GPT, Anthropic's Claude, and Google's Gemini are non-deterministic: ask the same question twice and you can get a different answer each time. The bigger risk is that when these tools don't know something, they don't stop. They produce a confident, plausible answer anyway: a hallucination.</p>
+      <p>I've seen a single confidently wrong AI answer in an ops review poison trust in the whole thing.</p>
+    </div>
+
+    <div class="konekti-box">
+      <div class="eyebrow">Where Konekti fits</div>
+      <p>These challenges are exactly what we built Konekti for.</p>
+      <p>We help teams create a reusable model of how their operations actually run, one they can extend instead of rebuild, make the risk logic visible and inspectable for their team, and let AI reason over the data while showing the evidence behind every answer.</p>
+      <p>For this kind of OTIF use case, that means connecting the order, supplier, inventory, delivery, and shipment logic, so teams can trace the risk signal back to where it first appeared, instead of only reviewing the miss after the fact.</p>
+      <div class="img-slot">Data model + answer, with source references &mdash; image not placed yet</div>
+    </div>
+
+    <div class="cta">
+      <p>Curious? Just <span class="reply">reply with OTIF</span> and I'll send you the one-page checklist we use to trace a late order back to its first risk signal.</p>
+      <p style="margin-top:10px;">Already want to see this on your own data? Reply and let me know, and I'll walk you through it.</p>
+    </div>
+
+    <p class="signoff">Cheers,<br><span class="name">Lotte</span></p>
+  </div>
+
+  <div class="footer">
+    <p class="tagline">Konekti helps supply chain and operations teams build reusable process intelligence models, connect fragmented operational data, and use AI to investigate what is happening without losing control of the logic.</p>
+    <p class="ps">PS: Konekti was recently named European Supply Chain Startup of the Year for the business impact we're making for supply chain and ops leaders.</p>
+    <p class="unsub"><a href="#">Not relevant? Click here to unsubscribe.</a></p>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "Ampere reconstruction fidelity matrix",
+  "version": "1.0.0",
+  "confidenceScale": {
+    "high": "Directly visible in public case-study imagery or current indexed architecture.",
+    "medium": "Repeated visual evidence with implementation values estimated from proportions or sampling.",
+    "low": "Plausible reconstruction requiring direct current-site comparison or approved source files.",
+    "not-applicable": "Original implementation rather than a copied source element."
+  },
+  "items": [
+    {
+      "element": "Black-first visual system",
+      "confidence": "high",
+      "action": "Preserve"
+    },
+    {
+      "element": "Electric cobalt accent",
+      "confidence": "high",
+      "action": "Confirm official hex"
+    },
+    {
+      "element": "White and icy blue-gray support fields",
+      "confidence": "high",
+      "action": "Preserve and tune values"
+    },
+    {
+      "element": "Thin neo-grotesk display type",
+      "confidence": "high",
+      "action": "Request official typeface and license"
+    },
+    {
+      "element": "Compact neo-grotesk navigation",
+      "confidence": "high",
+      "action": "Preserve"
+    },
+    {
+      "element": "Angular symbol plus wordmark",
+      "confidence": "high",
+      "action": "Replace concept mark with official SVG"
+    },
+    {
+      "element": "Large asymmetric hero wedge",
+      "confidence": "high",
+      "action": "Preserve composition logic"
+    },
+    {
+      "element": "Blue monochrome hero imagery",
+      "confidence": "high",
+      "action": "Replace abstract field with approved media"
+    },
+    {
+      "element": "Triangle link cue",
+      "confidence": "high",
+      "action": "Preserve"
+    },
+    {
+      "element": "Large thin blue statistics",
+      "confidence": "high",
+      "action": "Preserve"
+    },
+    {
+      "element": "Current top-level page architecture",
+      "confidence": "high",
+      "action": "Verify immediately before launch"
+    },
+    {
+      "element": "Current homepage section order",
+      "confidence": "low",
+      "action": "Compare with current direct screenshots"
+    },
+    {
+      "element": "Exact current cobalt value",
+      "confidence": "medium",
+      "action": "Calibrate to approved token"
+    },
+    {
+      "element": "Exact current font",
+      "confidence": "low",
+      "action": "Obtain licensed files"
+    },
+    {
+      "element": "Exact breakpoints",
+      "confidence": "low",
+      "action": "Tune through visual comparison"
+    },
+    {
+      "element": "Exact header scroll behavior",
+      "confidence": "low",
+      "action": "Compare with a desktop and mobile recording"
+    },
+    {
+      "element": "Exact reveal durations",
+      "confidence": "low",
+      "action": "Compare with a recording"
+    },
+    {
+      "element": "Exact hover behavior",
+      "confidence": "low",
+      "action": "Compare with a recording"
+    },
+    {
+      "element": "Current official photography treatment",
+      "confidence": "medium",
+      "action": "Confirm against current asset library"
+    },
+    {
+      "element": "Official logo clear space",
+      "confidence": "low",
+      "action": "Replace working rule with official guidance"
+    },
+    {
+      "element": "Component source code",
+      "confidence": "not-applicable",
+      "action": "Keep original implementation"
+    }
+  ],
+  "releaseLabels": {
+    "brand-faithful": "Dominant composition, type behavior, color balance, geometry, and interaction character align while content and code remain original.",
+    "pixel-matched": "Use only after the calibration protocol is completed against current official screenshots and recordings."
+  }
+}

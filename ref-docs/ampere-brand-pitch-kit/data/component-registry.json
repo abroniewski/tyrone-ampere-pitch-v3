@@ -1,0 +1,511 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "Ampere pitch site component registry",
+  "version": "1.0.0",
+  "defaults": {
+    "cornerRadius": 0,
+    "borderWidth": "1px",
+    "focusVisible": "2px solid #FFFFFF with offset on dark; #063CFF on light",
+    "reducedMotion": "Reveal immediately and preserve state affordances.",
+    "pointerRule": "Hover effects only on hover-capable fine pointers."
+  },
+  "components": [
+    {
+      "id": "global-header",
+      "category": "navigation",
+      "status": "implemented",
+      "anatomy": [
+        "brand mark",
+        "wordmark",
+        "optional concept qualifier",
+        "primary links",
+        "primary CTA",
+        "mobile toggle"
+      ],
+      "variants": [
+        "transparent-over-hero",
+        "scrolled-near-black"
+      ],
+      "states": [
+        "default",
+        "scrolled",
+        "mobile-open",
+        "focus-visible"
+      ],
+      "motion": {
+        "scrollThreshold": "24px",
+        "duration": "420ms",
+        "easing": "outExpo"
+      },
+      "accessibility": [
+        "skip link",
+        "aria-current",
+        "button-expanded state",
+        "keyboard-operable menu",
+        "body scroll lock while open"
+      ],
+      "contentLimits": {
+        "primaryLinksMax": 5,
+        "ctaMax": 1
+      }
+    },
+    {
+      "id": "mobile-menu",
+      "category": "navigation",
+      "status": "implemented",
+      "anatomy": [
+        "full cobalt field",
+        "large navigation links",
+        "contact link",
+        "compact metadata"
+      ],
+      "variants": [
+        "closed",
+        "open"
+      ],
+      "states": [
+        "closed",
+        "opening",
+        "open",
+        "closing"
+      ],
+      "motion": {
+        "duration": "900ms",
+        "easing": "inOut"
+      },
+      "accessibility": [
+        "focus is moved into menu",
+        "escape closes",
+        "toggle label changes",
+        "aria-hidden synchronized"
+      ]
+    },
+    {
+      "id": "hero",
+      "category": "section",
+      "status": "implemented",
+      "anatomy": [
+        "black canvas",
+        "four-line display headline",
+        "support copy",
+        "triangle text link",
+        "right polygon media",
+        "coordinates",
+        "scroll prompt"
+      ],
+      "variants": [
+        "home-full-viewport",
+        "interior-72-to-80vh"
+      ],
+      "states": [
+        "loading",
+        "revealed",
+        "reduced-motion"
+      ],
+      "motion": {
+        "headlineStagger": "90-130ms",
+        "mediaParallaxFactor": 0.04,
+        "revealDuration": "1100ms"
+      },
+      "contentLimits": {
+        "headlineWordsMax": 9,
+        "supportWordsMax": 40,
+        "actionsMax": 1
+      }
+    },
+    {
+      "id": "kicker",
+      "category": "typography",
+      "status": "implemented",
+      "anatomy": [
+        "solid right-pointing triangle",
+        "uppercase micro-label",
+        "optional section number"
+      ],
+      "variants": [
+        "on-dark",
+        "on-light"
+      ],
+      "states": [
+        "default"
+      ],
+      "contentLimits": {
+        "linesMax": 1
+      }
+    },
+    {
+      "id": "button",
+      "category": "action",
+      "status": "implemented",
+      "anatomy": [
+        "label",
+        "northeast arrow",
+        "rising fill layer"
+      ],
+      "variants": [
+        "primary-cobalt",
+        "outline-light",
+        "outline-dark"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus-visible",
+        "active",
+        "disabled"
+      ],
+      "motion": {
+        "duration": "420ms",
+        "easing": "outExpo",
+        "arrowTravel": "2-3px",
+        "magneticMax": "12% of cursor displacement"
+      },
+      "accessibility": [
+        "minimum 52px height",
+        "visible focus",
+        "disabled semantics",
+        "magnetic disabled for reduced motion and coarse pointers"
+      ],
+      "contentLimits": {
+        "labelWordsMax": 4
+      }
+    },
+    {
+      "id": "text-link",
+      "category": "action",
+      "status": "implemented",
+      "anatomy": [
+        "triangle cue",
+        "label"
+      ],
+      "variants": [
+        "on-dark",
+        "on-light"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus-visible"
+      ],
+      "motion": {
+        "triangleTravel": "3px",
+        "duration": "180ms"
+      }
+    },
+    {
+      "id": "section-header",
+      "category": "section",
+      "status": "implemented",
+      "anatomy": [
+        "kicker",
+        "large headline",
+        "compact aside copy"
+      ],
+      "variants": [
+        "dark",
+        "light",
+        "mist"
+      ],
+      "layout": {
+        "desktop": "12-column: 1-3 kicker, 4-10 headline, 10-12 aside",
+        "mobile": "stacked"
+      }
+    },
+    {
+      "id": "system-card",
+      "category": "content",
+      "status": "implemented",
+      "anatomy": [
+        "index",
+        "title",
+        "compact body",
+        "cobalt hover fill"
+      ],
+      "variants": [
+        "three-up-grid",
+        "two-up-grid"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus-within"
+      ],
+      "motion": {
+        "fillDirection": "bottom-to-top",
+        "duration": "650ms",
+        "easing": "outExpo"
+      },
+      "layout": {
+        "desktopMinHeight": "496px"
+      },
+      "contentLimits": {
+        "titleWordsMax": 6,
+        "bodyWordsMax": 35
+      }
+    },
+    {
+      "id": "campaign-card",
+      "category": "content",
+      "status": "implemented",
+      "anatomy": [
+        "asymmetric media crop",
+        "gradient overlay",
+        "category metadata",
+        "large title",
+        "northeast arrow"
+      ],
+      "variants": [
+        "large",
+        "portrait",
+        "wide",
+        "offset"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus-within"
+      ],
+      "motion": {
+        "mediaScale": "1.03-1.06",
+        "duration": "900-1200ms"
+      },
+      "contentLimits": {
+        "titleWordsMax": 8,
+        "metadataLinesMax": 1
+      }
+    },
+    {
+      "id": "stat-card",
+      "category": "proof",
+      "status": "implemented",
+      "anatomy": [
+        "oversized cobalt numeral",
+        "compact label",
+        "one-pixel border"
+      ],
+      "variants": [
+        "mist-grid",
+        "light-grid"
+      ],
+      "states": [
+        "default",
+        "counter-active"
+      ],
+      "motion": {
+        "counterOptional": true,
+        "duration": "900-1400ms"
+      },
+      "contentLimits": {
+        "labelWordsMax": 14
+      }
+    },
+    {
+      "id": "timeline-row",
+      "category": "process",
+      "status": "implemented",
+      "anatomy": [
+        "index",
+        "one-word phase",
+        "compact explanation",
+        "optional duration"
+      ],
+      "variants": [
+        "dark",
+        "light"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus-within"
+      ],
+      "motion": {
+        "fillDirection": "bottom-to-top",
+        "duration": "650ms"
+      },
+      "layout": {
+        "desktopRatio": "1 / 3 / 2"
+      }
+    },
+    {
+      "id": "portfolio-row",
+      "category": "index",
+      "status": "implemented",
+      "anatomy": [
+        "index",
+        "company name",
+        "sector or location metadata",
+        "arrow"
+      ],
+      "variants": [
+        "dark",
+        "light"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus-visible"
+      ],
+      "motion": {
+        "fillDirection": "left-to-right",
+        "duration": "650ms"
+      },
+      "contentLimits": {
+        "companyNameLinesMax": 2
+      }
+    },
+    {
+      "id": "insight-row",
+      "category": "editorial",
+      "status": "implemented",
+      "anatomy": [
+        "category",
+        "reading time",
+        "title",
+        "arrow"
+      ],
+      "variants": [
+        "light",
+        "dark"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus-visible"
+      ],
+      "motion": {
+        "insetTravel": "8-14px",
+        "duration": "420ms"
+      },
+      "contentLimits": {
+        "titleWordsMax": 16
+      }
+    },
+    {
+      "id": "quote-block",
+      "category": "proof",
+      "status": "implemented",
+      "anatomy": [
+        "oversized quote",
+        "compact attribution",
+        "off-canvas gradient shard"
+      ],
+      "variants": [
+        "black-with-gradient",
+        "cobalt-with-black"
+      ],
+      "states": [
+        "default",
+        "revealed"
+      ],
+      "contentLimits": {
+        "quoteWordsMax": 48
+      }
+    },
+    {
+      "id": "person-card",
+      "category": "people",
+      "status": "implemented",
+      "anatomy": [
+        "4:5 portrait",
+        "name",
+        "role",
+        "optional profile link"
+      ],
+      "variants": [
+        "grayscale-to-color",
+        "always-color"
+      ],
+      "states": [
+        "default",
+        "hover",
+        "focus-within"
+      ],
+      "motion": {
+        "colorReveal": "420-900ms",
+        "mediaScale": "1.03"
+      },
+      "accessibility": [
+        "do not rely on color change for meaning",
+        "descriptive alt text when portrait is informative"
+      ]
+    },
+    {
+      "id": "contact-form",
+      "category": "form",
+      "status": "implemented-demo-only",
+      "anatomy": [
+        "labels above fields",
+        "bottom-rule inputs",
+        "large input text",
+        "single submit action"
+      ],
+      "variants": [
+        "two-column-desktop",
+        "one-column-mobile"
+      ],
+      "states": [
+        "default",
+        "focus",
+        "invalid",
+        "valid",
+        "disabled",
+        "submitting",
+        "success",
+        "error"
+      ],
+      "accessibility": [
+        "explicit labels",
+        "programmatic error association",
+        "keyboard order",
+        "status announcement",
+        "server validation required in production"
+      ]
+    },
+    {
+      "id": "major-cta",
+      "category": "section",
+      "status": "implemented",
+      "anatomy": [
+        "full cobalt field",
+        "large headline",
+        "single outline action",
+        "gradient shard"
+      ],
+      "variants": [
+        "cobalt",
+        "black"
+      ],
+      "states": [
+        "default",
+        "revealed"
+      ],
+      "contentLimits": {
+        "headlineWordsMax": 9,
+        "actionsMax": 1
+      }
+    },
+    {
+      "id": "footer",
+      "category": "navigation",
+      "status": "implemented",
+      "anatomy": [
+        "brand",
+        "three compact link groups",
+        "legal row",
+        "prototype notice"
+      ],
+      "variants": [
+        "near-black"
+      ],
+      "states": [
+        "default",
+        "focus-visible"
+      ],
+      "accessibility": [
+        "semantic footer",
+        "descriptive link groups",
+        "visible focus"
+      ]
+    }
+  ]
+}

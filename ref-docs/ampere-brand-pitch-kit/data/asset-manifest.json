@@ -1,0 +1,532 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "Ampere pitch site production asset manifest",
+  "version": "1.0.0",
+  "statusLegend": {
+    "included-original": "Created for this kit and safe to use as concept material.",
+    "request-approved": "Must be supplied or approved by Ampere or the applicable owner.",
+    "produce-new": "Commission or create a new asset with appropriate rights.",
+    "optional": "Useful but not required for the first pitch build."
+  },
+  "groups": [
+    {
+      "id": "identity",
+      "label": "Core identity",
+      "items": [
+        {
+          "id": "logo-primary",
+          "name": "Primary horizontal logo",
+          "status": "request-approved",
+          "format": [
+            "SVG"
+          ],
+          "usage": [
+            "header",
+            "footer",
+            "presentations"
+          ],
+          "rightsOwner": "Ampere Alliance",
+          "required": true
+        },
+        {
+          "id": "logo-symbol",
+          "name": "Symbol-only logo",
+          "status": "request-approved",
+          "format": [
+            "SVG"
+          ],
+          "usage": [
+            "favicon",
+            "small UI",
+            "social avatar"
+          ],
+          "rightsOwner": "Ampere Alliance",
+          "required": true
+        },
+        {
+          "id": "logo-reversed",
+          "name": "Reversed logo",
+          "status": "request-approved",
+          "format": [
+            "SVG"
+          ],
+          "usage": [
+            "dark and cobalt fields"
+          ],
+          "rightsOwner": "Ampere Alliance",
+          "required": true
+        },
+        {
+          "id": "logo-dark",
+          "name": "Black logo",
+          "status": "request-approved",
+          "format": [
+            "SVG"
+          ],
+          "usage": [
+            "light fields",
+            "documents"
+          ],
+          "rightsOwner": "Ampere Alliance",
+          "required": true
+        },
+        {
+          "id": "logo-blue",
+          "name": "Approved blue logo variant",
+          "status": "request-approved",
+          "format": [
+            "SVG"
+          ],
+          "usage": [
+            "campaigns"
+          ],
+          "rightsOwner": "Ampere Alliance",
+          "required": false
+        },
+        {
+          "id": "favicon-set",
+          "name": "Favicon set",
+          "status": "request-approved",
+          "format": [
+            "SVG",
+            "PNG 32",
+            "PNG 180",
+            "web manifest icons"
+          ],
+          "usage": [
+            "browser",
+            "mobile bookmarks"
+          ],
+          "rightsOwner": "Ampere Alliance",
+          "required": true
+        },
+        {
+          "id": "brand-colors",
+          "name": "Official color specification",
+          "status": "request-approved",
+          "format": [
+            "HEX",
+            "RGB",
+            "CMYK",
+            "Pantone when applicable"
+          ],
+          "usage": [
+            "all channels"
+          ],
+          "rightsOwner": "Ampere Alliance",
+          "required": true
+        },
+        {
+          "id": "brand-fonts",
+          "name": "Official font names, licensed files, and weight map",
+          "status": "request-approved",
+          "format": [
+            "WOFF2",
+            "license documentation"
+          ],
+          "usage": [
+            "web typography"
+          ],
+          "rightsOwner": "Font licensor or Ampere Alliance",
+          "required": true
+        },
+        {
+          "id": "brand-guidelines",
+          "name": "Logo clear-space, minimum-size, and misuse rules",
+          "status": "request-approved",
+          "format": [
+            "PDF or source guidelines"
+          ],
+          "usage": [
+            "quality control"
+          ],
+          "rightsOwner": "Ampere Alliance",
+          "required": true
+        },
+        {
+          "id": "concept-mark",
+          "name": "Concept-only angular mark",
+          "status": "included-original",
+          "path": "assets/svg/concept-mark.svg",
+          "usage": [
+            "prototype placeholder only"
+          ],
+          "required": false,
+          "restriction": "Never represent this as the official Ampere logo."
+        }
+      ]
+    },
+    {
+      "id": "portfolio-identity",
+      "label": "Portfolio and partner identity",
+      "items": [
+        {
+          "id": "current-company-logos",
+          "name": "Approved current portfolio-company logos",
+          "status": "request-approved",
+          "format": [
+            "SVG",
+            "PNG fallback"
+          ],
+          "usage": [
+            "portfolio index",
+            "case studies",
+            "proof bands"
+          ],
+          "rightsOwner": "Applicable company",
+          "required": true
+        },
+        {
+          "id": "historical-company-logos",
+          "name": "Approved historical portfolio-company logos",
+          "status": "request-approved",
+          "format": [
+            "SVG"
+          ],
+          "usage": [
+            "historical case studies only"
+          ],
+          "rightsOwner": "Applicable company",
+          "required": false
+        },
+        {
+          "id": "partner-marks",
+          "name": "Approved partner, press, advisor, and award marks",
+          "status": "request-approved",
+          "format": [
+            "SVG"
+          ],
+          "usage": [
+            "credibility bands"
+          ],
+          "rightsOwner": "Applicable organization",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "hero-media",
+      "label": "Hero media library",
+      "items": [
+        {
+          "id": "hero-stills",
+          "name": "Horizontal hero stills",
+          "status": "produce-new",
+          "quantity": "6-10",
+          "minimum": "2400x1600",
+          "format": [
+            "AVIF",
+            "WebP",
+            "JPEG fallback"
+          ],
+          "brief": "People and infrastructure, strong negative space, directional light, cobalt-compatible tonal range.",
+          "rights": [
+            "web",
+            "social",
+            "presentation",
+            "paid media"
+          ],
+          "required": true
+        },
+        {
+          "id": "hero-loop",
+          "name": "Muted loop-safe hero video",
+          "status": "produce-new",
+          "quantity": 1,
+          "minimum": "1920x1080",
+          "format": [
+            "MP4 H.264",
+            "WebM",
+            "poster image"
+          ],
+          "duration": "6-10 seconds",
+          "targetFileSize": "under 8 MB",
+          "required": false
+        },
+        {
+          "id": "hero-field",
+          "name": "Abstract cobalt hero field",
+          "status": "included-original",
+          "path": "assets/svg/hero-field.svg",
+          "usage": [
+            "prototype hero media"
+          ],
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "leadership",
+      "label": "Leadership imagery",
+      "items": [
+        {
+          "id": "leadership-portraits",
+          "name": "Consistent environmental portraits",
+          "status": "produce-new",
+          "quantity": "one per leader",
+          "minimum": "1600x2000",
+          "aspectRatio": "4:5",
+          "brief": "Consistent lighting and camera distance; environmental context preferred over generic studio treatment.",
+          "rights": [
+            "web",
+            "presentation",
+            "social"
+          ],
+          "required": true
+        },
+        {
+          "id": "leadership-bios",
+          "name": "Approved leader bios and role labels",
+          "status": "request-approved",
+          "format": [
+            "plain text",
+            "structured data"
+          ],
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "portfolio-photography",
+      "label": "Portfolio-company photography",
+      "perCompany": [
+        {
+          "id": "facility-establishing",
+          "name": "Facility or exterior establishing image",
+          "status": "produce-new",
+          "required": true
+        },
+        {
+          "id": "people-at-work",
+          "name": "People at work",
+          "status": "produce-new",
+          "required": true
+        },
+        {
+          "id": "equipment-detail",
+          "name": "Equipment or product detail",
+          "status": "produce-new",
+          "required": true
+        },
+        {
+          "id": "operating-environment",
+          "name": "Wide operating-environment image",
+          "status": "produce-new",
+          "required": true
+        },
+        {
+          "id": "company-leadership",
+          "name": "Leadership portrait",
+          "status": "produce-new",
+          "required": false
+        },
+        {
+          "id": "proof-image",
+          "name": "Result or proof image",
+          "status": "produce-new",
+          "required": true
+        }
+      ],
+      "delivery": {
+        "masterMinimum": "2400px long edge",
+        "formats": [
+          "AVIF",
+          "WebP",
+          "JPEG fallback"
+        ],
+        "responsiveWidths": [
+          480,
+          768,
+          1200,
+          1600,
+          2400
+        ]
+      }
+    },
+    {
+      "id": "culture-careers",
+      "label": "Culture and careers",
+      "items": [
+        {
+          "id": "culture-library",
+          "name": "Culture and field-work image library",
+          "status": "produce-new",
+          "quantity": "12-20",
+          "minimum": "2400px long edge",
+          "brief": "Teams in real operating environments, apprentices, operators, engineers, leaders, safety, training, manufacturing, and geographic range.",
+          "required": true
+        },
+        {
+          "id": "role-data",
+          "name": "Approved open-role data feed or spreadsheet",
+          "status": "request-approved",
+          "format": [
+            "JSON",
+            "CSV",
+            "ATS API"
+          ],
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "editorial-social",
+      "label": "Editorial and social templates",
+      "items": [
+        {
+          "id": "article-thumbnail",
+          "name": "Article thumbnail",
+          "status": "produce-new",
+          "dimensions": "1600x900",
+          "required": true
+        },
+        {
+          "id": "open-graph",
+          "name": "Open Graph image",
+          "status": "produce-new",
+          "dimensions": "1200x630",
+          "required": true
+        },
+        {
+          "id": "linkedin-portrait",
+          "name": "LinkedIn portrait post",
+          "status": "produce-new",
+          "dimensions": "1200x1500",
+          "required": false
+        },
+        {
+          "id": "linkedin-landscape",
+          "name": "LinkedIn landscape post",
+          "status": "produce-new",
+          "dimensions": "1200x627",
+          "required": false
+        },
+        {
+          "id": "story-cover",
+          "name": "Story and reel cover",
+          "status": "produce-new",
+          "dimensions": "1080x1920",
+          "required": false
+        },
+        {
+          "id": "presentation-cover",
+          "name": "Presentation cover",
+          "status": "produce-new",
+          "dimensions": "1920x1080",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "proof-data",
+      "label": "Case-study proof package",
+      "items": [
+        {
+          "id": "baseline",
+          "name": "Baseline metric",
+          "status": "request-approved",
+          "required": true
+        },
+        {
+          "id": "time-period",
+          "name": "Measurement time period",
+          "status": "request-approved",
+          "required": true
+        },
+        {
+          "id": "result",
+          "name": "Result metric",
+          "status": "request-approved",
+          "required": true
+        },
+        {
+          "id": "source-owner",
+          "name": "Data source and internal owner",
+          "status": "request-approved",
+          "required": true
+        },
+        {
+          "id": "approval-status",
+          "name": "Publication approval status",
+          "status": "request-approved",
+          "required": true
+        },
+        {
+          "id": "mechanism",
+          "name": "Short explanation of the mechanism",
+          "status": "request-approved",
+          "required": true
+        },
+        {
+          "id": "supporting-quote",
+          "name": "Approved supporting quote",
+          "status": "request-approved",
+          "required": false
+        },
+        {
+          "id": "restrictions",
+          "name": "Publication restrictions and embargoes",
+          "status": "request-approved",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "included-abstract-art",
+      "label": "Included original concept visuals",
+      "items": [
+        {
+          "id": "arrow",
+          "name": "Northeast arrow",
+          "status": "included-original",
+          "path": "assets/svg/arrow-up-right.svg"
+        },
+        {
+          "id": "industrial-grid",
+          "name": "Industrial grid field",
+          "status": "included-original",
+          "path": "assets/svg/industrial-grid.svg"
+        },
+        {
+          "id": "people-field",
+          "name": "People field",
+          "status": "included-original",
+          "path": "assets/svg/people-field.svg"
+        },
+        {
+          "id": "data-field",
+          "name": "Data field",
+          "status": "included-original",
+          "path": "assets/svg/data-field.svg"
+        }
+      ]
+    }
+  ],
+  "globalOptimization": {
+    "imageFormats": [
+      "AVIF",
+      "WebP",
+      "JPEG fallback when required"
+    ],
+    "responsiveWidths": [
+      480,
+      768,
+      1200,
+      1600,
+      2400
+    ],
+    "video": {
+      "formats": [
+        "MP4 H.264",
+        "WebM"
+      ],
+      "posterRequired": true,
+      "captionsForInterviews": true
+    },
+    "accessibility": {
+      "meaningfulAltText": true,
+      "emptyAltForDecorative": true,
+      "avoidTextBakedIntoImages": true
+    }
+  }
+}

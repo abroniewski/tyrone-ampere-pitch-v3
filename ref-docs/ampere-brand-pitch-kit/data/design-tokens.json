@@ -1,0 +1,293 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "Ampere brand-faithful pitch concept tokens",
+  "version": "1.0.0",
+  "status": "unofficial-working-system",
+  "notes": [
+    "Values are working tokens reconstructed from public Ampere materials and an original implementation.",
+    "The exact licensed display face, official logo files, and approved color specification are not bundled.",
+    "Replace medium- and low-confidence values during the calibration protocol before public launch."
+  ],
+  "color": {
+    "ink": {
+      "value": "#050505",
+      "role": "Primary dark canvas and text",
+      "confidence": "high"
+    },
+    "carbon": {
+      "value": "#101216",
+      "role": "Raised dark surface",
+      "confidence": "medium"
+    },
+    "carbonSoft": {
+      "value": "#171A20",
+      "role": "Secondary dark surface",
+      "confidence": "medium"
+    },
+    "paper": {
+      "value": "#F5F6F7",
+      "role": "Warm-light canvas",
+      "confidence": "medium"
+    },
+    "white": {
+      "value": "#FFFFFF",
+      "role": "High-contrast copy and controls",
+      "confidence": "high"
+    },
+    "mist": {
+      "value": "#E3E9F1",
+      "role": "Icy support field",
+      "confidence": "medium"
+    },
+    "silver": {
+      "value": "#B9C4D8",
+      "role": "Cool supporting field",
+      "confidence": "medium"
+    },
+    "steel": {
+      "value": "#7D8595",
+      "role": "Muted metadata",
+      "confidence": "medium"
+    },
+    "electric": {
+      "value": "#063CFF",
+      "role": "Primary accent and action",
+      "confidence": "medium"
+    },
+    "electricBright": {
+      "value": "#1358FF",
+      "role": "Hover and gradient lift",
+      "confidence": "low"
+    },
+    "electricDeep": {
+      "value": "#0029C8",
+      "role": "Pressed and deep gradient stop",
+      "confidence": "low"
+    },
+    "lineDark": {
+      "value": "rgba(5,5,5,0.18)",
+      "role": "Rules on light fields",
+      "confidence": "medium"
+    },
+    "lineLight": {
+      "value": "rgba(255,255,255,0.22)",
+      "role": "Rules on dark fields",
+      "confidence": "medium"
+    },
+    "textMutedDark": {
+      "value": "rgba(5,5,5,0.62)",
+      "role": "Secondary text on light",
+      "confidence": "medium"
+    },
+    "textMutedLight": {
+      "value": "rgba(255,255,255,0.62)",
+      "role": "Secondary text on dark",
+      "confidence": "medium"
+    }
+  },
+  "gradient": {
+    "electric": {
+      "value": "linear-gradient(145deg, #0439FF 0%, #2358DD 48%, #C2CADB 100%)",
+      "role": "Primary geometric shard",
+      "confidence": "medium"
+    },
+    "electricSoft": {
+      "value": "linear-gradient(135deg, rgba(6,60,255,0.98), rgba(77,101,180,0.72) 58%, rgba(207,214,228,0.94))",
+      "role": "Media tint and secondary shard",
+      "confidence": "medium"
+    },
+    "ink": {
+      "value": "linear-gradient(180deg, #050505, #111318)",
+      "role": "Dark depth",
+      "confidence": "low"
+    }
+  },
+  "typography": {
+    "families": {
+      "display": {
+        "value": "Helvetica Neue, Nimbus Sans L, Helvetica, Arial, sans-serif",
+        "status": "fallback-stack",
+        "productionAction": "Replace with approved licensed neo-grotesk family."
+      },
+      "body": {
+        "value": "Inter, Helvetica Neue, Helvetica, Arial, sans-serif",
+        "status": "fallback-stack",
+        "productionAction": "Confirm approved body family and license."
+      },
+      "mono": {
+        "value": "SFMono-Regular, Consolas, Liberation Mono, monospace",
+        "status": "system-fallback"
+      }
+    },
+    "weights": {
+      "thin": 200,
+      "light": 300,
+      "regular": 400,
+      "medium": 500,
+      "bold": 700
+    },
+    "sizes": {
+      "hero": "clamp(3.5rem, 7vw, 8.4rem)",
+      "display": "clamp(2.9rem, 5.5vw, 6.5rem)",
+      "h1": "clamp(2.6rem, 4.5vw, 5.6rem)",
+      "h2": "clamp(2.15rem, 3.6vw, 4.5rem)",
+      "h3": "clamp(1.45rem, 2.2vw, 2.6rem)",
+      "bodyLarge": "clamp(1.08rem, 1.35vw, 1.35rem)",
+      "body": "1rem",
+      "small": "0.78rem",
+      "micro": "0.68rem"
+    },
+    "lineHeights": {
+      "tight": 0.94,
+      "display": 1.02,
+      "copy": 1.55
+    },
+    "letterSpacing": {
+      "tight": "-0.045em",
+      "display": "-0.025em",
+      "label": "0.08em"
+    },
+    "recipes": {
+      "hero": {
+        "family": "display",
+        "size": "hero",
+        "weight": 200,
+        "lineHeight": 0.94,
+        "letterSpacing": "-0.052em",
+        "case": "sentence"
+      },
+      "sectionDisplay": {
+        "family": "display",
+        "size": "display",
+        "weight": 300,
+        "lineHeight": 1.02,
+        "letterSpacing": "-0.035em",
+        "case": "sentence"
+      },
+      "cardTitle": {
+        "family": "display",
+        "size": "h3",
+        "weight": 300,
+        "lineHeight": 1.02,
+        "letterSpacing": "-0.025em"
+      },
+      "bodyLarge": {
+        "family": "body",
+        "size": "bodyLarge",
+        "weight": 400,
+        "lineHeight": 1.55
+      },
+      "label": {
+        "family": "body",
+        "size": "micro",
+        "weight": 500,
+        "lineHeight": 1.2,
+        "letterSpacing": "0.08em",
+        "case": "uppercase"
+      }
+    }
+  },
+  "layout": {
+    "containerMax": "118rem",
+    "gutter": "clamp(1.25rem, 3vw, 4rem)",
+    "sectionSpace": "clamp(6rem, 12vw, 13rem)",
+    "sectionSpaceSmall": "clamp(4rem, 7vw, 8rem)",
+    "gridGap": "clamp(1rem, 2vw, 2.5rem)",
+    "headerHeight": "5.25rem",
+    "columns": 12,
+    "recommendedTextMeasure": "34rem",
+    "breakpoints": {
+      "small": "480px",
+      "medium": "768px",
+      "large": "1024px",
+      "wide": "1440px",
+      "ultra": "1888px"
+    }
+  },
+  "spacing": {
+    "2xs": "0.375rem",
+    "xs": "0.625rem",
+    "sm": "0.875rem",
+    "md": "1.25rem",
+    "lg": "2rem",
+    "xl": "3rem",
+    "2xl": "4.5rem",
+    "3xl": "7rem",
+    "4xl": "10rem"
+  },
+  "shape": {
+    "radius": {
+      "none": "0"
+    },
+    "border": {
+      "thin": "1px"
+    },
+    "triangleCue": {
+      "width": "0.48rem",
+      "height": "0.56rem",
+      "direction": "right"
+    },
+    "heroMediaClip": "polygon(24% 0, 100% 0, 100% 82%, 63% 100%, 0 100%, 18% 50%)",
+    "campaignMediaClip": "polygon(0 12%, 86% 0, 100% 72%, 76% 100%, 0 92%)"
+  },
+  "motion": {
+    "easing": {
+      "outExpo": "cubic-bezier(0.16, 1, 0.3, 1)",
+      "inOut": "cubic-bezier(0.76, 0, 0.24, 1)",
+      "linear": "linear"
+    },
+    "duration": {
+      "fast": "180ms",
+      "base": "420ms",
+      "slow": "900ms",
+      "reveal": "1100ms",
+      "cardFill": "650ms"
+    },
+    "reveal": {
+      "distance": "40px",
+      "threshold": 0.12,
+      "once": true
+    },
+    "stagger": {
+      "headlineMin": "90ms",
+      "headlineMax": "130ms"
+    },
+    "parallax": {
+      "minFactor": 0.04,
+      "maxFactor": 0.08,
+      "allowedTargets": [
+        "large background shapes",
+        "large media"
+      ],
+      "forbiddenTargets": [
+        "body copy",
+        "form controls"
+      ]
+    },
+    "marquee": {
+      "loopMin": "18s",
+      "loopMax": "28s",
+      "pauseOnHoverRecommended": true
+    },
+    "reducedMotion": {
+      "disableParallax": true,
+      "stopMarquee": true,
+      "revealImmediately": true,
+      "preserveStates": true
+    }
+  },
+  "zIndex": {
+    "base": 1,
+    "sticky": 20,
+    "header": 40,
+    "menu": 60,
+    "preloader": 100
+  },
+  "content": {
+    "headlineMaxWords": 9,
+    "heroSupportMaxWords": 34,
+    "cardBodyMaxWords": 32,
+    "primaryNavigationMaxItems": 5,
+    "maxButtonsPerViewport": 2
+  }
+}
