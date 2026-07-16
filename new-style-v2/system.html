@@ -64,161 +64,213 @@
   </section>
   <div class="pitch-main">
 
-  <section>
-    <h2>The architecture</h2>
-    <div class="layer-stack">
-      <div class="layer"><span class="lnum">1</span><span class="lname">CAPTURE</span><span class="ldesc">Conversations, documents, CRM signals, company discovery</span></div>
-      <div class="layer"><span class="lnum">2</span><span class="lname">MODEL</span><span class="ldesc">Companies, capabilities, solutions, ICPs, personas, proof, value propositions</span></div>
-      <div class="layer"><span class="lnum">3</span><span class="lname">GOVERN</span><span class="ldesc">Owners, approvers, group standards, company exceptions, provenance</span></div>
-      <div class="layer"><span class="lnum">4</span><span class="lname">GENERATE</span><span class="ldesc">Websites, decks, proposals, one-pagers, training, account briefs</span></div>
-      <div class="layer"><span class="lnum">5</span><span class="lname">RELEASE</span><span class="ldesc">Publish, notify, acknowledge, deprecate, archive</span></div>
-      <div class="layer"><span class="lnum">6</span><span class="lname">LEARN</span><span class="ldesc">Sales feedback, customer language, CRM engagement, web performance</span></div>
-      <div class="layer outer"><span class="lnum">7</span><span class="lname">ABSORB</span><span class="ldesc">Run the acquisition playbook again. The layer that makes the next deal make the system stronger.</span></div>
+
+  <section class="pitch-section" data-reveal>
+    <header class="band-head">
+      <div class="band-head__lead">
+        <span class="orb" aria-hidden="true"></span>
+        <div>
+          <p class="band-head__title">The architecture</p>
+          <p class="band-head__sub">Seven layers</p>
+        </div>
+      </div>
+    </header>
+    <div class="rule-list" style="margin-top:0">
+      <div class="rule-list__item"><p class="rule-list__label">1 · Capture</p><span class="rule-list__meta">Conversations, documents, CRM signals, company discovery</span></div>
+      <div class="rule-list__item"><p class="rule-list__label">2 · Model</p><span class="rule-list__meta">Companies, capabilities, solutions, ICPs, personas, proof, value propositions</span></div>
+      <div class="rule-list__item"><p class="rule-list__label">3 · Govern</p><span class="rule-list__meta">Owners, approvers, group standards, company exceptions, provenance</span></div>
+      <div class="rule-list__item"><p class="rule-list__label">4 · Generate</p><span class="rule-list__meta">Websites, decks, proposals, one-pagers, training, account briefs</span></div>
+      <div class="rule-list__item"><p class="rule-list__label">5 · Release</p><span class="rule-list__meta">Publish, notify, acknowledge, deprecate, archive</span></div>
+      <div class="rule-list__item"><p class="rule-list__label">6 · Learn</p><span class="rule-list__meta">Sales feedback, customer language, CRM engagement, web performance</span></div>
+      <div class="rule-list__item is-active"><p class="rule-list__label">7 · Absorb</p><span class="rule-list__meta">Run the acquisition playbook again. The layer that makes the next deal make the system stronger.</span></div>
     </div>
   </section>
 
-  <section id="loop" class="interactive-loop-section">
-    <div class="loop-heading-row">
-      <div>
-        <h2>The inner engine, already running</h2>
-        <p class="prose">This is not a diagram of intent. It's the working loop that produced this pitch. Click any stage to open it. Stage four starts open because everything before it feeds the engine room, and everything after it runs on what the engine room remembers.</p>
+      <section id="engine" class="pitch-section" data-reveal data-metric-accordion>
+    <header class="band-head">
+      <div class="band-head__lead">
+        <span class="orb" aria-hidden="true"></span>
+        <div>
+          <p class="band-head__title">The inner engine</p>
+          <p class="band-head__sub">Already running</p>
+        </div>
       </div>
-      <div class="loop-instruction">Select a stage</div>
-    </div>
+    </header>
+    <p class="prose" style="margin:1.25rem 0 0.5rem">This is not a diagram of intent. It's the working loop that produced this pitch. Open any stage. Stage four starts open because everything before it feeds the engine room, and everything after it runs on what the engine room remembers.</p>
+    <div class="metric-accordion">
 
-    <div class="interactive-loop" id="interactiveLoop" style="--active-x: 50%;">
-      <div class="loop-track" role="tablist" aria-label="Sales and marketing loop">
-        <button class="loop-node" type="button" role="tab" aria-selected="false" aria-controls="stage-panel-1" id="stage-tab-1" data-stage="1" tabindex="-1">
-          <span class="node-number">1</span>
-          <span class="node-title">Signals</span>
-          <span class="node-copy">Find companies with a reason to act</span>
-          <span class="node-action">Open stage</span>
-        </button>
-
-        <button class="loop-node" type="button" role="tab" aria-selected="false" aria-controls="stage-panel-2" id="stage-tab-2" data-stage="2" tabindex="-1">
-          <span class="node-number">2</span>
-          <span class="node-title">Enrichment</span>
-          <span class="node-copy">Turn a company name into useful context</span>
-          <span class="node-action">Open stage</span>
-        </button>
-
-        <button class="loop-node" type="button" role="tab" aria-selected="false" aria-controls="stage-panel-3" id="stage-tab-3" data-stage="3" tabindex="-1">
-          <span class="node-number">3</span>
-          <span class="node-title">Outreach</span>
-          <span class="node-copy">Start a relevant conversation</span>
-          <span class="node-action">Open stage</span>
-        </button>
-
-        <button class="loop-node active engine-node" type="button" role="tab" aria-selected="true" aria-controls="stage-panel-4" id="stage-tab-4" data-stage="4" tabindex="0">
-          <span class="node-number">4</span>
-          <span class="node-title">The engine room</span>
-          <span class="node-copy">Turn conversations into permanent knowledge</span>
-          <span class="node-action">Open now</span>
-        </button>
-
-        <button class="loop-node" type="button" role="tab" aria-selected="false" aria-controls="stage-panel-5" id="stage-tab-5" data-stage="5" tabindex="-1">
-          <span class="node-number">5</span>
-          <span class="node-title">Sales assets</span>
-          <span class="node-copy">Build the next meeting on their world</span>
-          <span class="node-action">Open stage</span>
-        </button>
-
-        <button class="loop-node" type="button" role="tab" aria-selected="false" aria-controls="stage-panel-6" id="stage-tab-6" data-stage="6" tabindex="-1">
-          <span class="node-number">6</span>
-          <span class="node-title">Marketing and learning</span>
-          <span class="node-copy">Build visibility, measure what lands, sharpen the next signal</span>
-          <span class="node-action">Open stage</span>
-        </button>
-      </div>
-
-      <div class="loop-back" aria-hidden="true">
-        <span>Back to stage 1: what performs sharpens the next signal</span>
-      </div>
-
-      <div class="active-stage-connector" aria-hidden="true"></div>
-
-      <div class="stage-detail-shell">
-        <article class="stage-panel" id="stage-panel-1" role="tabpanel" aria-labelledby="stage-tab-1" data-panel="1" hidden>
-          <div class="stage-panel-header">
-            <div>
-              <div class="stage-kicker">Stage 1 &middot; Signals</div>
-              <h2>Find companies with a reason to act, not names on a list.</h2>
+        <article class="metric-accordion__item">
+          <div class="metric-accordion__row">
+            <div class="metric-accordion__main">
+              <span class="metric-accordion__index">(01)</span>
+              <h3 class="metric-accordion__title">Signals</h3>
             </div>
-            <span class="stage-chip">Lead generation</span>
+            <div class="metric-accordion__metric">
+              <span class="metric-accordion__label">Lead gen</span>
+              <span class="metric-accordion__value">4h</span>
+            </div>
+            <button class="metric-accordion__toggle" type="button" aria-expanded="false">Read more +</button>
           </div>
-          <div class="stage-two-col">
+          <div class="metric-accordion__panel" hidden>
+            <div class="metric-accordion__panel-inner">
+              <div class="metric-accordion__triad">
+                <div class="metric-accordion__col">
+                  <span class="metric-accordion__col-label">Challenge</span>
+                  <p>Hunting and sorting buyers manually burns time and still misses live pain signals.</p>
+                </div>
+                <div class="metric-accordion__col">
+                  <span class="metric-accordion__col-label">Solution</span>
+                  <p>Semi-automated workflows watch permits, queues, and expansion signals, then hand a person a reviewed list.</p>
+                </div>
+                <div class="metric-accordion__col">
+                  <span class="metric-accordion__col-label">Result</span>
+                  <p>A filtered company list ready for human judgment. Never auto-contacted.</p>
+                </div>
+              </div>
+              <div class="metric-accordion__proof">
+                <p class="prose" style="margin-bottom:1rem"><strong>Find companies with a reason to act, not names on a list.</strong></p>
+                <div class="stage-two-col">
             <div>
-              <p><strong>A new data center permit is a live pain signal.</strong> I build semi-automated workflows that watch the signals that matter for Ampere: data center construction permits, utility interconnection queues, grid modernization programs, electrification projects, plant expansions. Anything that says someone will soon need switchgear, transformers, energy storage, or the partner who can deliver all of it.</p>
-              <p>The workflow collects the companies behind each signal, separates real buyers from noise, and hands a person a reviewed list. It removes the hunting and sorting. It does not decide who deserves outreach, and it never contacts anyone on its own.</p>
+              <p><strong>A new data center permit is a live pain signal.</strong> I build fit-for-purpose, semi-automated workflows around whatever signal matters: construction permits, interconnection queues, grid modernization programs, plant expansions. Anything that says someone will soon need switchgear, transformers, or energy storage.</p>
+              <p>The workflow collects the companies behind each signal, separates buyers from noise, and hands a person a reviewed list. It never contacts anyone on its own.</p>
             </div>
             <div>
               <div class="stage-callout" style="margin-bottom:12px">
-                <div class="tag">Already proven at Konekti</div>
-                <p>There, the signal was hiring: a company recruiting planners is usually already feeling a planning problem. The first working version of that workflow:</p>
+                <div class="tag">Use case: one signal, acted on</div>
+                <p>At Konekti, the signal was planner hiring: a company adding planning capacity is already feeling a planning problem. I built the full workflow around that one signal, start to finish, and its FIRST pull produced:</p>
               </div>
               <div class="stage-callout metric-callout three-up">
-                <div><strong>4 hours</strong><span>from start to working system</span></div>
-                <div><strong>132</strong><span>companies surfaced</span></div>
-                <div><strong>76</strong><span>recruiting agencies filtered out</span></div>
+                <div><strong>4 hours</strong><span>from idea to working workflow</span></div>
+                <div><strong>132</strong><span>companies surfaced on the first pull</span></div>
+                <div><strong>76</strong><span>recruiting agencies filtered out automatically</span></div>
+              </div>
+            </div>
+          </div>
               </div>
             </div>
           </div>
         </article>
-
-        <article class="stage-panel" id="stage-panel-2" role="tabpanel" aria-labelledby="stage-tab-2" data-panel="2" hidden>
-          <div class="stage-panel-header">
-            <div>
-              <div class="stage-kicker">Stage 2 &middot; Enrichment</div>
-              <h2>Turn each signal into a useful account and person-level view.</h2>
+        <article class="metric-accordion__item">
+          <div class="metric-accordion__row">
+            <div class="metric-accordion__main">
+              <span class="metric-accordion__index">(02)</span>
+              <h3 class="metric-accordion__title">Enrichment</h3>
             </div>
-            <span class="stage-chip">Context &rarr; CRM</span>
+            <div class="metric-accordion__metric">
+              <span class="metric-accordion__label">Leads, first pull</span>
+              <span class="metric-accordion__value">143</span>
+            </div>
+            <button class="metric-accordion__toggle" type="button" aria-expanded="false">Read more +</button>
           </div>
-          <div class="stage-two-col">
+          <div class="metric-accordion__panel" hidden>
+            <div class="metric-accordion__panel-inner">
+              <div class="metric-accordion__triad">
+                <div class="metric-accordion__col">
+                  <span class="metric-accordion__col-label">Challenge</span>
+                  <p>Maximize what every lead is worth: no time burned on low-quality leads, and no high-quality lead wasted on a generic approach.</p>
+                </div>
+                <div class="metric-accordion__col">
+                  <span class="metric-accordion__col-label">Solution</span>
+                  <p>Enrichment turns companies into known people with personal context... automatically.</p>
+                </div>
+                <div class="metric-accordion__col">
+                  <span class="metric-accordion__col-label">Result</span>
+                  <p>A personalized package for every single lead: emails, call scripts, LinkedIn requests, all grounded in who they are.</p>
+                </div>
+              </div>
+              <div class="metric-accordion__proof">
+                <p class="prose" style="margin-bottom:1rem"><strong>Turn each signal into people worth talking to.</strong></p>
+                <div class="stage-two-col">
             <div>
-              <p>This happens to every lead list, regardless of which signal created it. Each company is enriched with headcount, turnover, sector, the signal that surfaced it, and a scored view of how strongly it fits the ideal customer profile.</p>
-              <p>From that account set, I use tools like Sales Navigator to find the people who best match the target persona, Clay to enrich each person with additional context from their LinkedIn presence and company, and Apollo and similar tools to add verified email addresses and phone numbers for outreach.</p>
-              <p>The CRM record keeps both layers: why the company surfaced and why this person is the right route in. The same structure then generates a grounded personal opener without losing the evidence behind it.</p>
+              <p>Every lead list goes through the same funnel, whatever signal created it. From the first pull: <strong>132 companies surfaced &rarr; 42 matched the ideal customer profile &rarr; an average of 3.4 relevant people at each &rarr; about 143 real leads</strong>, each one a named person with a reason to hear from us.</p>
+              <p>The tooling: Sales Navigator to find the people who best match the target persona, Clay to enrich each one with context from their LinkedIn presence and company, Apollo and similar tools for verified email addresses and phone numbers.</p>
             </div>
             <div class="stage-callout">
-              <div class="tag">What every enriched record carries</div>
-              <p><strong>Company fit:</strong> scale, turnover, sector, triggering signal, and ICP score.</p>
-              <p><strong>Person fit:</strong> role, seniority, likely proximity to the pain, and the most credible route into the account.</p>
-              <p><strong>Outreach context:</strong> the precise reason this company and this person are worth contacting now.</p>
+              <div class="tag">What every lead package contains</div>
+              <p><strong>Why this company:</strong> the signal that surfaced it and how well it fits the profile.</p>
+              <p><strong>Why this person:</strong> role, seniority, and their likely distance from the pain.</p>
+              <p><strong>Ready to use:</strong> a personalized opener, email content, call script, and LinkedIn request... generated automatically, per lead.</p>
+            </div>
+          </div>
+              </div>
             </div>
           </div>
         </article>
-
-        <article class="stage-panel" id="stage-panel-3" role="tabpanel" aria-labelledby="stage-tab-3" data-panel="3" hidden>
-          <div class="stage-panel-header">
-            <div>
-              <div class="stage-kicker">Stage 3 &middot; Outreach</div>
-              <h2>Turn enriched context into a human-led multi-touch workflow.</h2>
+        <article class="metric-accordion__item">
+          <div class="metric-accordion__row">
+            <div class="metric-accordion__main">
+              <span class="metric-accordion__index">(03)</span>
+              <h3 class="metric-accordion__title">Outreach</h3>
             </div>
-            <span class="stage-chip">LinkedIn, email, phone</span>
+            <div class="metric-accordion__metric">
+              <span class="metric-accordion__label">Channels</span>
+              <span class="metric-accordion__value">3</span>
+            </div>
+            <button class="metric-accordion__toggle" type="button" aria-expanded="false">Read more +</button>
           </div>
-          <div class="stage-two-col">
+          <div class="metric-accordion__panel" hidden>
+            <div class="metric-accordion__panel-inner">
+              <div class="metric-accordion__triad">
+                <div class="metric-accordion__col">
+                  <span class="metric-accordion__col-label">Challenge</span>
+                  <p>Outreach has to convert... and it has to keep working when the group tests a new strategy, a new market, or a new end-to-end combination.</p>
+                </div>
+                <div class="metric-accordion__col">
+                  <span class="metric-accordion__col-label">Solution</span>
+                  <p>Personalized LinkedIn, email, and call scripts from the same CRM evidence, with a human deciding the next touch.</p>
+                </div>
+                <div class="metric-accordion__col">
+                  <span class="metric-accordion__col-label">Result</span>
+                  <p>Custom enough to feel personal, consistent enough to scale without losing the learning loop.</p>
+                </div>
+              </div>
+              <div class="metric-accordion__proof">
+                <p class="prose" style="margin-bottom:1rem"><strong>Turn enriched context into a human-led multi-touch workflow.</strong></p>
+                <div class="stage-two-col">
             <div>
-              <p>From each enriched list, I create the full outreach workflow: individually personalized LinkedIn interactions, email touches, and cold-call scripts. Every channel starts from the same company signal, person-level context, and likely pain.</p>
-              <p>The information lives in the CRM and supports semi-automated execution. I deliberately stop short of full automation. During early go-to-market work and product-market-fit discovery, replies, objections, role corrections, silence, and language choices are valuable signals. Full automation can optimize away the learning.</p>
-              <p>The system carries the research and consistency. The salesperson still carries the relationship and decides what the next touch should be.</p>
+              <p>Each enriched list becomes a full workflow: personalized LinkedIn touches, emails, and call scripts, all starting from the same signal, person, and likely pain.</p>
+              <p>Execution is semi-automated on purpose. Replies, objections, and even silence are how you learn whether a new market or a new combined offer is landing. Full automation optimizes that learning away. The system carries the research; the salesperson carries the relationship.</p>
             </div>
             <div class="stage-callout">
-              <div class="tag">Custom enough to feel personal</div>
-              <p>Part of the sequence is a use-case asset that reads like a finished corporate document. Underneath, it is assembled from reusable approved blocks plus sections built specifically for that person, that company, and the pain they are most likely feeling.</p>
+              <div class="tag">Use case: the perfect-fit document</div>
+              <p>Each lead receives a use-case document that reads like it was written for exactly their problem... because it was. Assembled from approved reusable blocks plus sections built for that person, that company, that pain. A perfect fit that never feels like a mail merge.</p>
+            </div>
+          </div>
+              </div>
             </div>
           </div>
         </article>
-
-        <article class="stage-panel active" id="stage-panel-4" role="tabpanel" aria-labelledby="stage-tab-4" data-panel="4">
-          <div class="stage-panel-header">
-            <div>
-              <div class="stage-kicker">Stage 4 &middot; The engine room</div>
-              <h2>Conversations become permanent, reusable commercial knowledge.</h2>
+        <article class="metric-accordion__item" data-open>
+          <div class="metric-accordion__row">
+            <div class="metric-accordion__main">
+              <span class="metric-accordion__index">(04)</span>
+              <h3 class="metric-accordion__title">The engine room</h3>
             </div>
-            <span class="stage-chip engine-chip">The compounding core</span>
+            <div class="metric-accordion__metric">
+              <span class="metric-accordion__label">Tagged proof points</span>
+              <span class="metric-accordion__value">571</span>
+            </div>
+            <button class="metric-accordion__toggle" type="button" aria-expanded="true">Read less &minus;</button>
           </div>
-
-          <p>Every meeting is recorded and dropped into one folder. A nightly run turns the transcript into structured notes, the notes into an account dossier, and the dossier into reusable proof points, objections, stakeholder maps, economics, and value propositions. A pre-call brief pulls that history back out before the next meeting.</p>
+          <div class="metric-accordion__panel">
+            <div class="metric-accordion__panel-inner">
+              <div class="metric-accordion__triad">
+                <div class="metric-accordion__col">
+                  <span class="metric-accordion__col-label">Challenge</span>
+                  <p>Meetings evaporate into notes nobody reuses, so every asset gets written twice.</p>
+                </div>
+                <div class="metric-accordion__col">
+                  <span class="metric-accordion__col-label">Solution</span>
+                  <p>Nightly runs turn transcripts into dossiers, proof points, and value props with a pre-call brief on the way back out.</p>
+                </div>
+                <div class="metric-accordion__col">
+                  <span class="metric-accordion__col-label">Result</span>
+                  <p>Nothing gets written twice. Every conversation makes the next asset stronger.</p>
+                </div>
+              </div>
+              <div class="metric-accordion__proof">
+                <p class="prose" style="margin-bottom:1rem"><strong>Conversations become permanent, reusable commercial knowledge.</strong></p>
+                <p>Every meeting is recorded and dropped into one folder. A nightly run turns the transcript into structured notes, the notes into an account dossier, and the dossier into reusable proof points, objections, stakeholder maps, economics, and value propositions. A pre-call brief pulls that history back out before the next meeting.</p>
 
           <div class="knowledge-chain" aria-label="Conversation to asset pipeline">
             <div>Conversations</div><span>&rarr;</span>
@@ -236,56 +288,44 @@
             <div class="stat"><div class="stat-num">571</div><div class="stat-label">tagged proof points</div></div>
             <div class="stat"><div class="stat-num">16</div><div class="stat-label">standardized use-case briefs</div></div>
           </div>
-
-          <div class="proof-grid">
-            <article class="proof-card">
-              <div class="tag">ABB &middot; live proof</div>
-              <h3>Transcript to published web page</h3>
-              <p>Sales calls became a dossier, then finished inventory-control website copy. The page is live today.</p>
-              <a class="proof-thumb" href="https://www.getkonekti.io/use-cases/inventory-control" target="_blank" rel="noopener"><img src="assets/thumbs/abb-live-thumb.png" alt="Preview of the live ABB inventory-control page on getkonekti.io"></a>
-              <div class="asset-links"><a href="https://www.getkonekti.io/use-cases/inventory-control" target="_blank" rel="noopener">Open the live ABB page</a></div>
-            </article>
-
-            <article class="proof-card">
-              <div class="tag">Rosen &middot; under 2 hours</div>
-              <h3>Two calls to a decision-ready proposal</h3>
-              <p>Two transcripts became a value proposition and ROI case grounded closely enough that the prospect called out the synthesis himself.</p>
-              <a class="proof-thumb" href="assets/rosen-value-proposition.pdf" target="_blank"><img src="assets/thumbs/rosen-thumb.png" alt="First page of the Rosen proposal"></a>
-              <div class="asset-links"><a href="assets/rosen-value-proposition.pdf" target="_blank">Open the proposal</a></div>
-            </article>
-
-            <article class="proof-card">
-              <div class="tag">InnoVami &middot; under 4 hours</div>
-              <h3>Research, scope, pricing, and the sent proposal</h3>
-              <p>A longshot lead triggered background research, a bottom-up scope model, an executive brief, and the final commercial proposal. Click any document to open it.</p>
-              <div class="thumb-grid">
-                <a href="assets/innovami-value-pricing-brief.pdf" target="_blank"><img src="assets/thumbs/innovami-brief-thumb.png" alt="First page of the research brief">Research brief</a>
-                <a href="assets/innovami-scope-calculator.pdf" target="_blank"><img src="assets/thumbs/innovami-decision-thumb.png" alt="First page of the decision brief">Decision brief</a>
-                <a href="assets/innovami-value-proposal.pdf" target="_blank"><img src="assets/thumbs/innovami-proposal-thumb.png" alt="First page of the sent proposal">Sent proposal</a>
-                <a href="assets/innovami-scope-calculator.xlsx"><img src="assets/thumbs/excel-thumb.png" alt="First sheet of the working Excel calculator">Working calculator (Excel download)</a>
+          <p style="margin-top:1rem">What comes OUT of the engine room is on the next two stages: the sales assets that move deals, and the marketing that builds visibility.</p>
               </div>
-            </article>
+            </div>
           </div>
         </article>
-
-        <article class="stage-panel" id="stage-panel-5" role="tabpanel" aria-labelledby="stage-tab-5" data-panel="5" hidden>
-          <div class="stage-panel-header">
-            <div>
-              <div class="stage-kicker">Stage 5 &middot; Sales assets</div>
-              <h2>Use the next asset to remove the exact reason the deal is stuck.</h2>
+        <article class="metric-accordion__item">
+          <div class="metric-accordion__row">
+            <div class="metric-accordion__main">
+              <span class="metric-accordion__index">(05)</span>
+              <h3 class="metric-accordion__title">Sales assets</h3>
             </div>
-            <span class="stage-chip">Demos and proposals</span>
+            <div class="metric-accordion__metric">
+              <span class="metric-accordion__label">Demos</span>
+              <span class="metric-accordion__value">PoV</span>
+            </div>
+            <button class="metric-accordion__toggle" type="button" aria-expanded="false">Read more +</button>
           </div>
-          <div class="stage-two-col">
+          <div class="metric-accordion__panel" hidden>
+            <div class="metric-accordion__panel-inner">
+              <div class="metric-accordion__triad">
+                <div class="metric-accordion__col">
+                  <span class="metric-accordion__col-label">Challenge</span>
+                  <p>Generic decks ignore the specific lead's pains, implications, needs, and payoff. So reps either hand-customize everything or send generic material and hope.</p>
+                </div>
+                <div class="metric-accordion__col">
+                  <span class="metric-accordion__col-label">Solution</span>
+                  <p>Transcripts plus automated workflows create assets specific to the lead: follow-ups, demos, proposals, built around what was actually said.</p>
+                </div>
+                <div class="metric-accordion__col">
+                  <span class="metric-accordion__col-label">Result</span>
+                  <p>Every lead gets highly customized material while rep time stays flat. And the asset bank grows: reuse first, create only when nothing fits.</p>
+                </div>
+              </div>
+              <div class="metric-accordion__proof">
+                <p class="prose" style="margin-bottom:1rem"><strong>Three deals, three assets, all straight out of the engine room.</strong></p>
+                <div class="stage-two-col">
             <div>
-              <p>After a meeting, the transcript can generate the follow-up email, the story for an asynchronous demo, and the supporting proposal or value case. The asset is built around the objection that actually appeared in the conversation, not around a generic product tour.</p>
-              <p>In this example, I recorded a Loom demo after the meeting and sent it in a transcript-grounded follow-up email. The demonstration ran through the product's capabilities using the prospect's own data.</p>
-              <p>They had already said no because they believed their unique custom environment would be too complicated and our software could not handle it. The follow-up changed the decision and opened a proof-of-value engagement.</p>
-            </div>
-            <div class="stage-callout">
-              <div class="tag">A no became a proof of value</div>
-              <h3>Transcript &rarr; follow-up email &rarr; async demo on their data &rarr; proof of value</h3>
-              <p>The engine room supplied the objection and the wording. The sales asset answered the objection with evidence the prospect could review on their own time.</p>
+              <p><strong>Use case: a no became a proof of value.</strong> The prospect had already said no: they believed their custom environment was too complicated for our software. So the transcript generated the follow-up email and the story for an async Loom demo, run on their own data. The follow-up changed the decision and opened a proof-of-value engagement.</p>
               <div class="loom-embed">
                 <div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/ee111306e7ad465eb4d46fda247a0cfa" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 10px;"></iframe></div>
               </div>
@@ -293,35 +333,85 @@
                 <a href="https://www.loom.com/share/ee111306e7ad465eb4d46fda247a0cfa" target="_blank" rel="noopener">Watch the Loom demo</a>
               </div>
             </div>
+            <div>
+              <div class="stage-callout" style="margin-bottom:12px">
+                <div class="tag">Rosen &middot; under 2 hours</div>
+                <p>Two call transcripts became a decision-ready proposal and ROI case. The prospect called out the synthesis himself.</p>
+                <a class="proof-thumb" href="assets/rosen-value-proposition.pdf" target="_blank"><img src="assets/thumbs/rosen-thumb.png" alt="First page of the Rosen proposal"></a>
+              </div>
+              <div class="stage-callout">
+                <div class="tag">InnoVami &middot; under 4 hours</div>
+                <p>Research, a bottom-up scope model, and the sent commercial proposal. Click any document to open it.</p>
+                <div class="thumb-grid">
+                  <a href="assets/innovami-value-pricing-brief.pdf" target="_blank"><img src="assets/thumbs/innovami-brief-thumb.png" alt="First page of the research brief">Research brief</a>
+                  <a href="assets/innovami-scope-calculator.pdf" target="_blank"><img src="assets/thumbs/innovami-decision-thumb.png" alt="First page of the decision brief">Decision brief</a>
+                  <a href="assets/innovami-value-proposal.pdf" target="_blank"><img src="assets/thumbs/innovami-proposal-thumb.png" alt="First page of the sent proposal">Sent proposal</a>
+                  <a href="assets/innovami-scope-calculator.xlsx"><img src="assets/thumbs/excel-thumb.png" alt="First sheet of the working Excel calculator">Working calculator (Excel)</a>
+                </div>
+              </div>
+            </div>
+          </div>
+              </div>
+            </div>
           </div>
         </article>
-
-        <article class="stage-panel" id="stage-panel-6" role="tabpanel" aria-labelledby="stage-tab-6" data-panel="6" hidden>
-          <div class="stage-panel-header">
-            <div>
-              <div class="stage-kicker">Stage 6 &middot; Marketing and learning</div>
-              <h2>Turn commercial knowledge into company visibility, personal reach, and better next bets.</h2>
+        <article class="metric-accordion__item">
+          <div class="metric-accordion__row">
+            <div class="metric-accordion__main">
+              <span class="metric-accordion__index">(06)</span>
+              <h3 class="metric-accordion__title">Marketing and learning</h3>
             </div>
-            <span class="stage-chip">Marketing engine</span>
+            <div class="metric-accordion__metric">
+              <span class="metric-accordion__label">Outputs</span>
+              <span class="metric-accordion__value">9</span>
+            </div>
+            <button class="metric-accordion__toggle" type="button" aria-expanded="false">Read more +</button>
           </div>
-          <p>This stage is broader than company content. The engine room supplies real pains, language, objections, and proof. From the same knowledge base, the system produces company assets such as use-case pages, newsletters, infographics, and carousels, as well as personal posts that build visibility, credibility, and networking opportunities.</p>
-          <p>CRM engagement and website analytics create an evidence trail for which messages, pages, and posts are working. Sales conversations supply the raw material. Performance data tells us what to develop next and which signal should start the next trip around the loop.</p>
-          <p>Production runs through brand tokens, reusable HTML patterns, and repeatable export. These are current outputs from that factory:</p>
+          <div class="metric-accordion__panel" hidden>
+            <div class="metric-accordion__panel-inner">
+              <div class="metric-accordion__triad">
+                <div class="metric-accordion__col">
+                  <span class="metric-accordion__col-label">Challenge</span>
+                  <p>Marketing drifts from sales reality when it is not fed by the same knowledge base.</p>
+                </div>
+                <div class="metric-accordion__col">
+                  <span class="metric-accordion__col-label">Solution</span>
+                  <p>Company and personal assets ship from the engine room; analytics decide what to develop next.</p>
+                </div>
+                <div class="metric-accordion__col">
+                  <span class="metric-accordion__col-label">Result</span>
+                  <p>Performance data sharpens the next signal and starts the loop again.</p>
+                </div>
+              </div>
+              <div class="metric-accordion__proof">
+                <p class="prose" style="margin-bottom:1rem"><strong>Turn commercial knowledge into visibility, reach, and better next bets.</strong></p>
+                <p>The engine room supplies real pains, language, objections, and proof. From that one knowledge base come use-case pages, newsletters, infographics, carousels, and personal posts. CRM engagement and website analytics show which of it lands, and that decides what gets made next... which sharpens the next signal and starts the loop again.</p>
+          <p>These are current, real outputs. Each one traces back to a recorded conversation or a canonical source:</p>
 
           <div class="factory-assets">
             <div class="factory-asset">
-              <div class="flabel"><strong>LinkedIn quote card</strong> &middot; as used</div>
+              <div class="flabel"><strong>Live use-case page</strong> &middot; from the ABB sales calls</div>
+              <p class="flabel" style="margin-top:4px">Recorded sales calls became a dossier, the dossier became finished website copy, and that page is live on getkonekti.io today. Transcript to published page.</p>
+              <a class="proof-thumb" href="https://www.getkonekti.io/use-cases/inventory-control" target="_blank" rel="noopener"><img class="asset-inline" src="assets/thumbs/abb-live-thumb.png" alt="Preview of the live ABB inventory-control page"></a>
+              <a class="embed-openlink" href="https://www.getkonekti.io/use-cases/inventory-control" target="_blank" rel="noopener">Open the live page &rarr;</a>
+            </div>
+
+            <div class="factory-asset">
+              <div class="flabel"><strong>LinkedIn quote card</strong> &middot; from a recorded webinar</div>
+              <p class="flabel" style="margin-top:4px">Our CEO was interviewed in a webinar. Because it was recorded, the high-value snippets were pulled out and turned into quote cards that get reused across marketing material.</p>
               <img class="asset-inline" src="assets/linkedin-quote-card.png" alt="LinkedIn quote card">
             </div>
 
             <div class="factory-asset">
-              <div class="flabel"><strong>OTIF infographic</strong> &middot; in development</div>
+              <div class="flabel"><strong>OTIF infographic</strong> &middot; from the same webinar</div>
+              <p class="flabel" style="margin-top:4px">Built as an asset for the newsletter, generated from the same webinar. It will also feed LinkedIn posts and travel in emails as part of the value-proposition story. One recording, many assets.</p>
               <img class="asset-inline clickable" src="assets/otif-infographic.png" alt="OTIF infographic" onclick="openLightbox('assets/otif-infographic.png', this.alt)">
               <span class="zoom-hint">Click to expand</span>
             </div>
 
             <div class="factory-asset">
-              <div class="flabel"><strong>LinkedIn carousel</strong> &middot; all 9 slides</div>
+              <div class="flabel"><strong>LinkedIn carousel</strong> &middot; from the value-proposition pillars</div>
+              <p class="flabel" style="margin-top:4px">Built straight from the pillars of the company value proposition, so the social content and the sales story never drift apart.</p>
               <div class="li-carousel-wrap">
                 <button class="li-nav prev" type="button" aria-label="Scroll left" onclick="scrollCarousel(-1)">&larr;</button>
                 <div class="li-carousel" id="liCarousel">
@@ -342,103 +432,176 @@
 
             <div class="factory-asset">
               <div class="flabel"><strong>Email newsletter issue 01</strong> &middot; draft in progress</div>
-              <a class="proof-thumb" href="assets/newsletter-draft.html" target="_blank"><img src="assets/thumbs/newsletter-thumb.png" alt="Top of the newsletter issue 01 draft"></a>
+              <a href="assets/newsletter-draft.html" target="_blank"><img class="asset-inline" src="assets/thumbs/newsletter-thumb.png" alt="Top of the newsletter issue 01 draft"></a>
               <a class="embed-openlink" href="assets/newsletter-draft.html" target="_blank">Open full size &rarr;</a>
             </div>
           </div>
+              </div>
+            </div>
+          </div>
         </article>
+    </div>
+  </section>
+
+
+  <section class="pitch-section" data-reveal>
+    <header class="band-head">
+      <div class="band-head__lead">
+        <span class="orb" aria-hidden="true"></span>
+        <div>
+          <p class="band-head__title">The rails beneath every stage</p>
+          <p class="band-head__sub">Design system and guardrails</p>
+        </div>
+      </div>
+    </header>
+    <div class="pillar-grid pillar-grid--2">
+      <div class="pillar-grid__cell">
+        <span class="pillar-grid__index">(01)</span>
+        <h3 class="pillar-grid__title">The brand is code, not a paragraph</h3>
+        <p class="pillar-grid__body">CSS tokens for colors and type. Reusable HTML patterns. Rule files the agent must load before producing anything visual. Repeatable rendering and export. The constraints live in the files, so the output cannot casually drift. This is why your prose-instruction design system made things worse and this one doesn't.</p>
+      </div>
+      <div class="pillar-grid__cell">
+        <span class="pillar-grid__index">(02)</span>
+        <h3 class="pillar-grid__title">Every claim keeps its receipts</h3>
+        <p class="pillar-grid__body">Stats and quotes are tagged by provenance and publication status. Pre-send checks block unsupported claims and sensitive material. Feedback becomes a permanent rule, so the same correction does not return wearing a new hat. And every proof point carries its ICP era, because I learned in a pivot that old evidence can poison a new story.</p>
       </div>
     </div>
   </section>
 
-  <section>
-    <h2>The rails beneath every stage</h2>
-    <div class="rail-grid">
-      <div class="rail-card">
-        <div class="tag">Design system</div>
-        <h3>The brand is code, not a paragraph</h3>
-        <p>CSS tokens for colors and type. Reusable HTML patterns. Rule files the agent must load before producing anything visual. Repeatable rendering and export. The constraints live in the files, so the output cannot casually drift. This is why your prose-instruction design system made things worse and this one doesn't.</p>
+  <section class="pitch-section" data-reveal data-metric-accordion>
+    <header class="band-head">
+      <div class="band-head__lead">
+        <span class="orb" aria-hidden="true"></span>
+        <div>
+          <p class="band-head__title">What exists, what gets built</p>
+          <p class="band-head__sub">The honest map &middot; 39 items</p>
+        </div>
       </div>
-      <div class="rail-card">
-        <div class="tag">Guardrails</div>
-        <h3>Every claim keeps its receipts</h3>
-        <p>Stats and quotes are tagged by provenance and publication status. Pre-send checks block unsupported claims and sensitive material. Feedback becomes a permanent rule, so the same correction does not return wearing a new hat. And every proof point carries its ICP era, because I learned in a pivot that old evidence can poison a new story.</p>
-      </div>
+    </header>
+    <p class="prose" style="margin-top:1.25rem">Every need from our call, plus every requirement the acquisition strategy creates, mapped honestly: 39 items in four lanes. You should distrust anyone whose answer is 39 for 39. Open a lane to see what's inside.</p>
+    <div class="metric-accordion">
+      <article class="metric-accordion__item">
+        <div class="metric-accordion__row">
+          <div class="metric-accordion__main">
+            <span class="metric-accordion__index">(01)</span>
+            <h3 class="metric-accordion__title">Proven today, in production</h3>
+          </div>
+          <div class="metric-accordion__metric">
+            <span class="metric-accordion__label">Items</span>
+            <span class="metric-accordion__value">14</span>
+          </div>
+          <button class="metric-accordion__toggle" type="button" aria-expanded="false">Read more +</button>
+        </div>
+        <div class="metric-accordion__panel" hidden>
+          <div class="metric-accordion__panel-inner">
+            <div class="pain-row"><div><span class="pain-what">A conversation knowledge base: 235 transcripts, 80 account dossiers, 571 proof points</span></div></div>
+            <div class="pain-row"><div><span class="pain-what">Stakeholder maps, objections, and momentum tracking per account</span></div></div>
+            <div class="pain-row"><div><span class="pain-what">Company discovery through a repeatable dossier template</span></div></div>
+            <div class="pain-row"><div><span class="pain-what">Value propositions built from zero, anchored and versioned</span></div></div>
+            <div class="pain-row"><div><span class="pain-what">A repeatable value-proposition process with standardized use-case briefs</span></div></div>
+            <div class="pain-row"><div><span class="pain-what">Reps request finished, approved material instead of building their own</span></div></div>
+            <div class="pain-row"><div><span class="pain-what">A live website generated from structured source material</span></div></div>
+            <div class="pain-row"><div><span class="pain-what">Decks and proposals shipped to real prospects</span></div></div>
+            <div class="pain-row"><div><span class="pain-what">An AI production workflow that works: tokens, patterns, rule files, repeatable export</span></div></div>
+            <div class="pain-row"><div><span class="pain-what">Centralized generation instead of failed self-serve templates</span></div></div>
+            <div class="pain-row"><div><span class="pain-what">Assets that compound: everything assembles from a reusable tagged library</span></div></div>
+            <div class="pain-row"><div><span class="pain-what">The trusted generalist role you described, plus the demonstrated system</span></div></div>
+            <div class="pain-row"><div><span class="pain-what">Quality encoded in checks and gates, not held in one person's head</span></div></div>
+            <div class="pain-row"><div><span class="pain-what">Last-mile relief: routine synthesis, assembly, and finishing move into the system</span></div></div>
+          </div>
+        </div>
+      </article>
+      <article class="metric-accordion__item">
+        <div class="metric-accordion__row">
+          <div class="metric-accordion__main">
+            <span class="metric-accordion__index">(02)</span>
+            <h3 class="metric-accordion__title">Configure for Ampere</h3>
+          </div>
+          <div class="metric-accordion__metric">
+            <span class="metric-accordion__label">Items</span>
+            <span class="metric-accordion__value">14</span>
+          </div>
+          <button class="metric-accordion__toggle" type="button" aria-expanded="false">Read more +</button>
+        </div>
+        <div class="metric-accordion__panel" hidden>
+          <div class="metric-accordion__panel-inner">
+            <div class="pain-row"><div><span class="pain-what">A recording and intake standard across the companies</span></div></div>
+            <div class="pain-row"><div><span class="pain-what">In-person meetings captured through quick voice debriefs</span></div></div>
+            <div class="pain-row"><div><span class="pain-what">The replacement story for expiring "fast"</span></div></div>
+            <div class="pain-row"><div><span class="pain-what">Choosing the scalable story with evidence, not guesses</span></div></div>
+            <div class="pain-row"><div><span class="pain-what">The Ampere brand turned into tokens and templates, from your designer's work</span></div></div>
+            <div class="pain-row"><div><span class="pain-what">Local marketing teams working inside clear rules and templates</span></div></div>
+            <div class="pain-row"><div><span class="pain-what">Understanding what each president values, so the group model creates visible local benefit</span></div></div>
+            <div class="pain-row"><div><span class="pain-what">One Ampere front door that sends each opportunity to the right company</span></div></div>
+            <div class="pain-row"><div><span class="pain-what">Better commercial data flowing into your Monday.com stack</span></div></div>
+            <div class="pain-row"><div><span class="pain-what">Everything the US sales team needs, ready before the hires land</span></div></div>
+            <div class="pain-row"><div><span class="pain-what">A faster, smoother move from the agent channel to the internal team</span></div></div>
+            <div class="pain-row"><div><span class="pain-what">One group story that each company can adapt without breaking it</span></div></div>
+            <div class="pain-row"><div><span class="pain-what">Target customers that can change as capabilities change, without rewriting everything by hand</span></div></div>
+            <div class="pain-row"><div><span class="pain-what">The urgent website and decks built so they survive the next change</span></div></div>
+          </div>
+        </div>
+      </article>
+      <article class="metric-accordion__item">
+        <div class="metric-accordion__row">
+          <div class="metric-accordion__main">
+            <span class="metric-accordion__index">(03)</span>
+            <h3 class="metric-accordion__title">Build new for Ampere</h3>
+          </div>
+          <div class="metric-accordion__metric">
+            <span class="metric-accordion__label">Items</span>
+            <span class="metric-accordion__value">7</span>
+          </div>
+          <button class="metric-accordion__toggle" type="button" aria-expanded="false">Read more +</button>
+        </div>
+        <div class="metric-accordion__panel" hidden>
+          <div class="metric-accordion__panel-inner">
+            <p class="prose" style="margin-bottom:0.75rem">The second layer. I won't pretend it already exists... in plain terms:</p>
+            <div class="pain-row"><div><span class="pain-what">One live map of what each company can do, and which companies win together</span></div></div>
+            <div class="pain-row"><div><span class="pain-what">A standard playbook so every acquisition enters through a process, not through memory</span></div></div>
+            <div class="pain-row"><div><span class="pain-what">Built on the assumption that Ampere will keep changing</span></div></div>
+            <div class="pain-row"><div><span class="pain-what">A catalog of every asset: who owns it, who it's for, whether it's still true</span></div></div>
+            <div class="pain-row"><div><span class="pain-what">Change the strategy once, get a list of every affected asset</span></div></div>
+            <div class="pain-row"><div><span class="pain-what">Updates published, old versions retired... reps always work from the current version</span></div></div>
+            <div class="pain-row"><div><span class="pain-what">A feed of clean commercial data into your Monday.com stack. Your systems owner keeps that lane; this supplies him, it doesn't compete with him</span></div></div>
+          </div>
+        </div>
+      </article>
+      <article class="metric-accordion__item">
+        <div class="metric-accordion__row">
+          <div class="metric-accordion__main">
+            <span class="metric-accordion__index">(04)</span>
+            <h3 class="metric-accordion__title">Leadership lane</h3>
+          </div>
+          <div class="metric-accordion__metric">
+            <span class="metric-accordion__label">Items</span>
+            <span class="metric-accordion__value">4</span>
+          </div>
+          <button class="metric-accordion__toggle" type="button" aria-expanded="false">Read more +</button>
+        </div>
+        <div class="metric-accordion__panel" hidden>
+          <div class="metric-accordion__panel-inner">
+            <div class="pain-row"><div><span class="pain-what">How group and company leadership divide decisions. A leadership conversation, not software.</span></div></div>
+            <div class="pain-row"><div><span class="pain-what">Compensation design. Belongs with you and your compensation specialist.</span></div></div>
+            <div class="pain-row"><div><span class="pain-what">The readiness-score decision. Yours, though the enablement material can support the testing.</span></div></div>
+            <div class="pain-row"><div><span class="pain-what">Who approves what. The system enforces the rules; leadership defines them.</span></div></div>
+            <p style="margin-top:0.75rem">This lane is exactly the list of things the group needs its Chief Revenue Officer for.</p>
+          </div>
+        </div>
+      </article>
     </div>
   </section>
 
-  <section>
-    <h2>What must be built for Ampere</h2>
-    <p class="prose">The inner engine is proven. Your acquisition strategy needs a second layer around it, and I won't pretend that layer already exists. In plain terms, this is what gets built:</p>
-    <div class="chain" style="margin-top:20px">
-      <div class="link">One live map of what each company can do</div>
-      <div class="link">Which companies win together</div>
-      <div class="link">A standard playbook for every new acquisition</div>
-      <div class="link">One group story that flexes per company</div>
-      <div class="link">A catalog of every asset and who owns it</div>
-      <div class="link">Approvals that respect who owns what</div>
-      <div class="link">When something changes, a list of what's affected</div>
-      <div class="link">Updates published, old versions retired</div>
-      <div class="link">A feed into your Monday.com stack</div>
-    </div>
-    <p class="prose" style="margin-top:20px">That last one matters: your systems guy owns the CRM and execution stack, and he's clearly good. This layer feeds him governed commercial objects. It doesn't compete with him.</p>
-
-    <details class="deep" style="margin-top:24px">
-      <summary><h3>The honest map: all 39 items, graded</h3><span class="count">14 proven &middot; 14 configure &middot; 7 build &middot; 4 leadership</span></summary>
-      <div class="body">
-        <p><span class="badge hit">Proven now &middot; 14</span></p>
-        <div class="pain-row"><span class="pid">A2</span><div><span class="pain-what">Conversation knowledge base (235 transcripts &rarr; 80 dossiers &rarr; 571 proof points)</span></div></div>
-        <div class="pain-row"><span class="pid">A4</span><div><span class="pain-what">Reading between stakeholder lines: stakeholder maps, objections, momentum tracking</span></div></div>
-        <div class="pain-row"><span class="pid">A5</span><div><span class="pain-what">Company discovery: the dossier template as a repeatable instrument</span></div></div>
-        <div class="pain-row"><span class="pid">B1</span><div><span class="pain-what">Value propositions built from zero (the 16-pillar master VP exists and anchors everything)</span></div></div>
-        <div class="pain-row"><span class="pid">B3</span><div><span class="pain-what">Repeatable value-prop process: standardized 14-section use-case briefs</span></div></div>
-        <div class="pain-row"><span class="pid">B5</span><div><span class="pain-what">Reps request finished, approved material instead of building their own</span></div></div>
-        <div class="pain-row"><span class="pid">C1</span><div><span class="pain-what">Websites: live token-based site generated from structured source</span></div></div>
-        <div class="pain-row"><span class="pid">C2</span><div><span class="pain-what">Decks and proposals: Rosen, InnoVami, Barclays, VW deliverables shipped</span></div></div>
-        <div class="pain-row"><span class="pid">C3</span><div><span class="pain-what">AI workflow that works: tokens, patterns, rule files, repeatable export</span></div></div>
-        <div class="pain-row"><span class="pid">C4</span><div><span class="pain-what">Centralized generation instead of failed self-serve templates</span></div></div>
-        <div class="pain-row"><span class="pid">C5</span><div><span class="pain-what">Compounding assets: everything assembles from a reusable tagged library</span></div></div>
-        <div class="pain-row"><span class="pid">D1</span><div><span class="pain-what">The trusted generalist: the role you described, plus the demonstrated system</span></div></div>
-        <div class="pain-row"><span class="pid">D2</span><div><span class="pain-what">Quality to your standard, encoded in gates instead of held in one head</span></div></div>
-        <div class="pain-row"><span class="pid">D4</span><div><span class="pain-what">Last-mile relief: routine synthesis, assembly, and finishing move into the system</span></div></div>
-
-        <p style="margin-top:18px"><span class="badge config">Configure or extend &middot; 14</span></p>
-        <div class="pain-row"><span class="pid">A1</span><div><span class="pain-what">Recording and intake standard across companies</span></div></div>
-        <div class="pain-row"><span class="pid">A3</span><div><span class="pain-what">In-person capture via voice debriefs</span></div></div>
-        <div class="pain-row"><span class="pid">B2</span><div><span class="pain-what">The replacement story for expiring "fast"</span></div></div>
-        <div class="pain-row"><span class="pid">B4</span><div><span class="pain-what">Choosing the scalable story with evidence, not guesses</span></div></div>
-        <div class="pain-row"><span class="pid">C6</span><div><span class="pain-what">Ampere multi-brand token system from your designer's work</span></div></div>
-        <div class="pain-row"><span class="pid">D3</span><div><span class="pain-what">Local marketing teams work inside clear rules and templates, so quality stops depending on individual skill</span></div></div>
-        <div class="pain-row"><span class="pid">E2</span><div><span class="pain-what">Understanding what each president values, so the group model creates visible local benefit</span></div></div>
-        <div class="pain-row"><span class="pid">E3</span><div><span class="pain-what">One Ampere front door that sends each opportunity to the right company</span></div></div>
-        <div class="pain-row"><span class="pid">E5</span><div><span class="pain-what">Better commercial data flowing into your Monday.com stack</span></div></div>
-        <div class="pain-row"><span class="pid">F3</span><div><span class="pain-what">Everything the US sales team needs, ready before the hires land</span></div></div>
-        <div class="pain-row"><span class="pid">F4</span><div><span class="pain-what">A faster, smoother move from the agent channel to the internal team</span></div></div>
-        <div class="pain-row"><span class="pid">S4</span><div><span class="pain-what">One group story that each company can adapt without breaking it</span></div></div>
-        <div class="pain-row"><span class="pid">S5</span><div><span class="pain-what">Target customers can change as capabilities change, without rewriting everything by hand</span></div></div>
-        <div class="pain-row"><span class="pid">S10</span><div><span class="pain-what">The urgent website and decks built so they survive the next change</span></div></div>
-
-        <p style="margin-top:18px"><span class="badge module">Build for Ampere &middot; 7</span></p>
-        <div class="pain-row"><span class="pid">E4</span><div><span class="pain-what">A repeatable way to fold each new company into the group's sales story</span></div></div>
-        <div class="pain-row"><span class="pid">S1</span><div><span class="pain-what">Built on the assumption that Ampere will keep changing</span></div></div>
-        <div class="pain-row"><span class="pid">S2</span><div><span class="pain-what">A live map of what the group can sell together, kept current</span></div></div>
-        <div class="pain-row"><span class="pid">S3</span><div><span class="pain-what">Every acquisition enters through a process, not through memory</span></div></div>
-        <div class="pain-row"><span class="pid">S7</span><div><span class="pain-what">A catalog of every asset: who owns it, who it's for, whether it's still true</span></div></div>
-        <div class="pain-row"><span class="pid">S8</span><div><span class="pain-what">Change the strategy once, get a list of every affected asset</span></div></div>
-        <div class="pain-row"><span class="pid">S9</span><div><span class="pain-what">Reps always work from the current version, never yesterday's</span></div></div>
-
-        <p style="margin-top:18px"><span class="badge gap">Leadership lane &middot; 4</span></p>
-        <div class="pain-row"><span class="pid">E1</span><div><span class="pain-what">How group and company leadership divide decisions. A leadership conversation, not software.</span></div></div>
-        <div class="pain-row"><span class="pid">F1</span><div><span class="pain-what">Compensation design. Belongs with you and your compensation specialist.</span></div></div>
-        <div class="pain-row"><span class="pid">F2</span><div><span class="pain-what">The readiness-score decision. Yours, though the enablement material can support the testing.</span></div></div>
-        <div class="pain-row"><span class="pid">S6</span><div><span class="pain-what">Who approves what. The system enforces the rules; leadership defines them.</span></div></div>
-        <p>You should distrust anyone whose answer is 39 for 39. The leadership lane is exactly the list of things the group needs its Chief Revenue Officer for.</p>
+  <section class="pitch-section" data-reveal>
+    <header class="band-head">
+      <div class="band-head__lead">
+        <span class="orb" aria-hidden="true"></span>
+        <div>
+          <p class="band-head__title">The practical difference</p>
+          <p class="band-head__sub">When something changes</p>
+        </div>
       </div>
-    </details>
-  </section>
-
-  <section>
-    <h2>The practical difference</h2>
+    </header>
     <div class="workflow old">
       <div class="wf-label">Today, when something changes</div>
       <p>Strategy changes &rarr; you remember which assets exist &rarr; people search folders &rarr; several files get missed &rarr; reps keep old copies &rarr; the next change starts the scavenger hunt again.</p>
@@ -451,12 +614,12 @@
   </section>
 
   <div class="cta-row">
-    <a class="button" href="next.html"><span>Prove it in 90 days, with the assets you already need</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19 19 5M8 5h11v11"/></svg></a>
+    <a class="button" href="next.html"><span>Here's how we start</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19 19 5M8 5h11v11"/></svg></a>
   </div>
 
   <div class="meta-note">
     <span class="label">How this page was made</span>
-    The engine room built this pitch from our call. The stages around it found the conversation, prepared it, turned it into finished work, and measured what landed. The seventh layer is the one your strategy demands, and it's labeled honestly: not built yet, clearly specified, provable in 90 days.
+    The engine room built this pitch from our call. The stages around it found the conversation, prepared it, turned it into finished work, and measured what landed. The seventh layer is the one your strategy demands, and it's labeled honestly: not built yet, clearly specified.
   </div>
 
   </div>

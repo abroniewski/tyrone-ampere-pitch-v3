@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+  <defs>
+    <radialGradient id="orbFill" cx="42%" cy="38%" r="68%">
+      <stop offset="0%" stop-color="#6B8FFF"/>
+      <stop offset="45%" stop-color="#3D6DFF"/>
+      <stop offset="100%" stop-color="#0340F8"/>
+    </radialGradient>
+    <filter id="orbGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="1.4" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Circle with bottom-right quadrant cut to center (Ampere orb) -->
+  <path
+    filter="url(#orbGlow)"
+    fill="url(#orbFill)"
+    d="M16 16 L16 30 A14 14 0 1 1 30 16 Z"
+  />
+</svg>
