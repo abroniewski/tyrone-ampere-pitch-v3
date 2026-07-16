@@ -1,0 +1,110 @@
+:root {
+  /* Live-site Ampere colors (browser-validated 2026-07-16) */
+  --color-ink: #000000;
+  --color-carbon: #101216;
+  --color-carbon-soft: #171a20;
+  --color-paper: #f5f6f7;
+  --color-white: #ffffff;
+  --color-mist: #e3e9f1;
+  --color-silver: #c2c2c2;
+  --color-steel: #737373;
+  --color-electric: #3d6dff;
+  --color-electric-meta: #0340f8;
+  --color-electric-bright: #5a82ff;
+  --color-electric-deep: #0029c8;
+  --color-line-dark: rgba(5, 5, 5, 0.18);
+  --color-line-light: rgba(255, 255, 255, 0.22);
+  --color-text-muted-light: rgba(255, 255, 255, 0.62);
+  --color-good: #3dd68c;
+  --color-warn: #f59a5c;
+  --color-bad: #f07070;
+  --gradient-electric: linear-gradient(145deg, #0340f8 0%, #3d6dff 48%, #c2c2c2 100%);
+  --gradient-ink: linear-gradient(180deg, #000000, #111318);
+
+  /* Semantic aliases for pitch components */
+  --bg: var(--color-ink);
+  --bg-2: var(--color-carbon);
+  --card: var(--color-carbon-soft);
+  --card-edge: var(--color-line-light);
+  --ink: var(--color-white);
+  --ink-dim: var(--color-silver);
+  --volt: var(--color-electric);
+  --volt-dim: var(--color-electric-deep);
+  --good: var(--color-good);
+  --warn: var(--color-warn);
+  --bad: var(--color-bad);
+  --max: 72rem;
+
+  /* Artboard sizing (live-site pattern) */
+  --size: 1440;
+  --size-end: 100vw;
+
+  /* Typography — General Sans name; Inter fallback until licensed files */
+  --font-display: "General Sans", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-body: "General Sans", Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+
+  --type-hero: calc(100 / var(--size) * var(--size-end));
+  --type-display: calc(62 / var(--size) * var(--size-end));
+  --type-h1: calc(48 / var(--size) * var(--size-end));
+  --type-h2: calc(30 / var(--size) * var(--size-end));
+  --type-h3: calc(22 / var(--size) * var(--size-end));
+  --type-body-lg: calc(18 / var(--size) * var(--size-end));
+  --type-body: calc(16 / var(--size) * var(--size-end));
+  --type-small: calc(14 / var(--size) * var(--size-end));
+  --type-micro: calc(12 / var(--size) * var(--size-end));
+  --type-nav: calc(12 / var(--size) * var(--size-end));
+  --type-nav-mobile: calc(20 / var(--size) * var(--size-end));
+
+  --leading-tight: 0.95;
+  --leading-display: 1.1;
+  --leading-copy: 1.4;
+  --tracking-display: -0.025em;
+  --tracking-label: 0.08em;
+
+  --gutter: clamp(1.25rem, 3vw, 4rem);
+  --section-space: clamp(4rem, 8vw, 7rem);
+  --section-space-sm: clamp(3rem, 5vw, 5rem);
+  --grid-gap: clamp(1rem, 2vw, 2.5rem);
+  --header-height: 5.25rem;
+  --radius-none: 0;
+  --border-thin: 1px;
+
+  /* Motion — live-site curves */
+  --ease-reveal: cubic-bezier(0.4, 0.5, 0, 1);
+  --ease-secondary: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.76, 0, 0.24, 1);
+  --duration-ui: 250ms;
+  --duration-fast: 180ms;
+  --duration-base: 420ms;
+  --duration-slow: 1000ms;
+  --duration-reveal: 1200ms;
+
+  --z-base: 1;
+  --z-sticky: 20;
+  --z-header: 40;
+  --z-menu: 60;
+  --z-preloader: 100;
+  --z-lightbox: 200;
+}
+
+@media (min-width: 1800px) {
+  :root { --size-end: 1800px; }
+}
+@media (max-width: 1199px) {
+  :root { --size: 1200; }
+}
+@media (max-width: 1023px) {
+  :root { --size: 1024; --header-height: 4.5rem; }
+}
+@media (max-width: 767px) {
+  :root {
+    --size: 392;
+    --type-hero: calc(60 / var(--size) * var(--size-end));
+    --section-space: 4.5rem;
+  }
+}

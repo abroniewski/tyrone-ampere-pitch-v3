@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Autopilot | 4. The System</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div style="background:#2b0a0a;border-bottom:2px solid #f87171;color:#fecaca;font-family:Inter,system-ui,sans-serif;font-size:.85rem;padding:12px 24px;text-align:center;position:relative;z-index:99;">EXHIBIT A: the previous pitch, preserved as evidence. One missed strategic fact made it stale. <a href="../index.html" style="color:#ffc93d;font-weight:700;">Back to the current pitch &rarr;</a></div>
+<nav>
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html">ADAM &times; AMPERE</a>
+    <div class="nav-steps">
+      <a href="index.html"><span class="n">1</span>Situation</a>
+      <a href="problem.html"><span class="n">2</span>Problem</a>
+      <a href="risks.html"><span class="n">3</span>Risks</a>
+      <a class="active" href="system.html"><span class="n">4</span>The System</a>
+      <a href="ampere.html"><span class="n">5</span>For Ampere</a>
+      <a href="next.html"><span class="n">6</span>Next</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section class="hero">
+    <div class="kicker">Step 4 &middot; What I built at Konekti</div>
+    <h1>I did not build a pile of assets. I built a loop.</h1>
+    <p class="lede">When I started, I had no value proposition, no usable sales assets, and no time. So I built one system that finds companies with a reason to act, starts better conversations, remembers what matters, turns it into finished work, and learns from what performs.</p>
+    <p class="lede"><strong>The fourth stage is the engine room. It is where conversations stop disappearing and start compounding.</strong></p>
+  </section>
+
+  <section id="loop" class="interactive-loop-section">
+    <div class="loop-heading-row">
+      <div>
+        <h2>The whole loop, on one page</h2>
+        <p class="prose">Click any stage to open it. Stage four starts open because everything before it feeds the engine room, and everything after it runs on what the engine room remembers.</p>
+      </div>
+      <div class="loop-instruction">Select a stage</div>
+    </div>
+
+    <div class="interactive-loop" id="interactiveLoop" style="--active-x: 50%;">
+      <div class="loop-track" role="tablist" aria-label="Sales and marketing loop">
+        <button class="loop-node" type="button" role="tab" aria-selected="false" aria-controls="stage-panel-1" id="stage-tab-1" data-stage="1" tabindex="-1">
+          <span class="node-number">1</span>
+          <span class="node-title">Signals</span>
+          <span class="node-copy">Find companies with a reason to act</span>
+          <span class="node-action">Open stage</span>
+        </button>
+
+        <button class="loop-node" type="button" role="tab" aria-selected="false" aria-controls="stage-panel-2" id="stage-tab-2" data-stage="2" tabindex="-1">
+          <span class="node-number">2</span>
+          <span class="node-title">Enrichment</span>
+          <span class="node-copy">Turn a company name into useful context</span>
+          <span class="node-action">Open stage</span>
+        </button>
+
+        <button class="loop-node" type="button" role="tab" aria-selected="false" aria-controls="stage-panel-3" id="stage-tab-3" data-stage="3" tabindex="-1">
+          <span class="node-number">3</span>
+          <span class="node-title">Outreach</span>
+          <span class="node-copy">Start a relevant conversation</span>
+          <span class="node-action">Open stage</span>
+        </button>
+
+        <button class="loop-node active engine-node" type="button" role="tab" aria-selected="true" aria-controls="stage-panel-4" id="stage-tab-4" data-stage="4" tabindex="0">
+          <span class="node-number">4</span>
+          <span class="node-title">The engine room</span>
+          <span class="node-copy">Turn conversations into permanent knowledge</span>
+          <span class="node-action">Open now</span>
+        </button>
+
+        <button class="loop-node" type="button" role="tab" aria-selected="false" aria-controls="stage-panel-5" id="stage-tab-5" data-stage="5" tabindex="-1">
+          <span class="node-number">5</span>
+          <span class="node-title">Sales assets</span>
+          <span class="node-copy">Build the next meeting on their world</span>
+          <span class="node-action">Open stage</span>
+        </button>
+
+        <button class="loop-node" type="button" role="tab" aria-selected="false" aria-controls="stage-panel-6" id="stage-tab-6" data-stage="6" tabindex="-1">
+          <span class="node-number">6</span>
+          <span class="node-title">Marketing and learning</span>
+          <span class="node-copy">Build visibility, measure what lands, sharpen the next signal</span>
+          <span class="node-action">Open stage</span>
+        </button>
+      </div>
+
+      <div class="loop-back" aria-hidden="true">
+        <svg viewBox="0 0 1000 78" preserveAspectRatio="none" focusable="false">
+          <defs>
+            <marker id="loopArrowHead" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="strokeWidth">
+              <path d="M0,0 L8,4 L0,8 Z"></path>
+            </marker>
+          </defs>
+          <path class="loop-back-path" d="M 916 3 C 958 3, 976 19, 976 42 C 976 63, 956 72, 922 72 L 78 72 C 41 72, 24 59, 24 39 C 24 17, 42 4, 82 4" marker-end="url(#loopArrowHead)"></path>
+        </svg>
+        <span>What performs sharpens the next signal</span>
+      </div>
+
+      <div class="active-stage-connector" aria-hidden="true"></div>
+
+      <div class="stage-detail-shell">
+        <article class="stage-panel" id="stage-panel-1" role="tabpanel" aria-labelledby="stage-tab-1" data-panel="1" hidden>
+          <div class="stage-panel-header">
+            <div>
+              <div class="stage-kicker">Stage 1 &middot; Signals</div>
+              <h2>Find companies with a reason to act, not names on a list.</h2>
+            </div>
+            <span class="stage-chip">Lead generation</span>
+          </div>
+          <div class="stage-two-col">
+            <div>
+              <p><strong>A hiring post is a live pain signal.</strong> I built a semi-automated browser workflow to find companies hiring planners, because a company adding planning capacity is usually already feeling a planning problem.</p>
+              <p>The first working version was live within four hours. It ran reliably without triggering Cloudflare blocks, collected the companies behind the postings, and separated operating companies from recruiters before a person reviewed the list.</p>
+              <p>The automation removes the hunting and sorting. It does not decide who deserves outreach, and it never contacts anyone on its own.</p>
+            </div>
+            <div>
+              <div class="stage-callout metric-callout three-up">
+                <div><strong>4 hours</strong><span>from start to working system</span></div>
+                <div><strong>132</strong><span>companies surfaced</span></div>
+                <div><strong>76</strong><span>recruiting agencies filtered out</span></div>
+              </div>
+              <div class="stage-callout" style="margin-top:12px">
+                <div class="tag">Point it at Ampere</div>
+                <p>Swap the signal source: data center construction permits, utility interconnection queues, plant expansions, project awards, or anything else that says someone is about to need transformers and switchgear.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="stage-panel" id="stage-panel-2" role="tabpanel" aria-labelledby="stage-tab-2" data-panel="2" hidden>
+          <div class="stage-panel-header">
+            <div>
+              <div class="stage-kicker">Stage 2 &middot; Enrichment</div>
+              <h2>Turn each signal into a useful account and person-level view.</h2>
+            </div>
+            <span class="stage-chip">Context &rarr; CRM</span>
+          </div>
+          <div class="stage-two-col">
+            <div>
+              <p>This happens to every lead list, regardless of which signal created it. Each company is enriched with estimated headcount, turnover, sector, the triggering job-post information, and a scored view of how strongly it fits the ICP.</p>
+              <p>From that account set, I use Sales Navigator to identify the people who best match the target persona and are most likely to be living the pain now. The CRM record keeps both layers: why the company surfaced and why this person is the right route in.</p>
+              <p>The same structure can then generate a grounded personal opener without losing the evidence behind it.</p>
+            </div>
+            <div class="stage-callout">
+              <div class="tag">What every enriched record carries</div>
+              <p><strong>Company fit:</strong> scale, turnover, sector, triggering signal, and ICP score.</p>
+              <p><strong>Person fit:</strong> role, seniority, likely proximity to the pain, and the most credible route into the account.</p>
+              <p><strong>Outreach context:</strong> the precise reason this company and this person are worth contacting now.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="stage-panel" id="stage-panel-3" role="tabpanel" aria-labelledby="stage-tab-3" data-panel="3" hidden>
+          <div class="stage-panel-header">
+            <div>
+              <div class="stage-kicker">Stage 3 &middot; Outreach</div>
+              <h2>Turn enriched context into a human-led multi-touch workflow.</h2>
+            </div>
+            <span class="stage-chip">LinkedIn, email, phone</span>
+          </div>
+          <div class="stage-two-col">
+            <div>
+              <p>From each enriched list, I create the full outreach workflow: individually personalized LinkedIn interactions, email touches, and cold-call scripts. Every channel starts from the same company signal, person-level context, and likely pain.</p>
+              <p>The information lives in the CRM and supports semi-automated execution. I deliberately stop short of full automation. During early go-to-market work and product-market-fit discovery, replies, objections, role corrections, silence, and language choices are valuable signals. Full automation can optimize away the learning.</p>
+              <p>The system carries the research and consistency. The salesperson still carries the relationship and decides what the next touch should be.</p>
+            </div>
+            <div class="stage-callout">
+              <div class="tag">Custom enough to feel personal</div>
+              <p>Part of the sequence is a use-case asset that reads like a finished corporate document. Underneath, it is assembled from reusable approved blocks plus sections built specifically for that person, that company, and the pain they are most likely feeling.</p>
+              <div class="tag" style="margin-top:18px">The plumbing still matters</div>
+              <p>SPF and DKIM are configured before sending, domains are warmed, and sending history is checked. Cold email often breaks at the infrastructure layer before it breaks at the writing layer.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="stage-panel active" id="stage-panel-4" role="tabpanel" aria-labelledby="stage-tab-4" data-panel="4">
+          <div class="stage-panel-header">
+            <div>
+              <div class="stage-kicker">Stage 4 &middot; The engine room</div>
+              <h2>Conversations become permanent, reusable commercial knowledge.</h2>
+            </div>
+            <span class="stage-chip engine-chip">The compounding core</span>
+          </div>
+
+          <p>Every meeting is recorded and dropped into one folder. A nightly run turns the transcript into structured notes, the notes into an account dossier, and the dossier into reusable proof points, objections, stakeholder maps, economics, and value propositions. A pre-call brief pulls that history back out before the next meeting.</p>
+
+          <div class="knowledge-chain" aria-label="Conversation to asset pipeline">
+            <div>Conversations</div><span>&rarr;</span>
+            <div>Notes</div><span>&rarr;</span>
+            <div>Dossiers</div><span>&rarr;</span>
+            <div>Proof library</div><span>&rarr;</span>
+            <div>Value props</div><span>&rarr;</span>
+            <div>Finished assets</div>
+          </div>
+          <p><strong>Nothing gets written twice. Every conversation makes the next asset stronger.</strong></p>
+
+          <div class="stats compact-stats">
+            <div class="stat"><div class="stat-num">235</div><div class="stat-label">call transcripts processed</div></div>
+            <div class="stat"><div class="stat-num">80</div><div class="stat-label">account dossiers built</div></div>
+            <div class="stat"><div class="stat-num">571</div><div class="stat-label">tagged proof points</div></div>
+            <div class="stat"><div class="stat-num">16</div><div class="stat-label">standardized use-case briefs</div></div>
+          </div>
+
+          <div class="proof-grid">
+            <article class="proof-card">
+              <div class="tag">ABB &middot; live proof</div>
+              <h3>Transcript to published web page</h3>
+              <p>Sales calls became a dossier, then finished inventory-control website copy. The page is live today.</p>
+              <div class="asset-links"><a href="https://www.getkonekti.io/use-cases/inventory-control" target="_blank" rel="noopener">Open the live ABB page</a></div>
+            </article>
+
+            <article class="proof-card">
+              <div class="tag">Rosen &middot; under 2 hours</div>
+              <h3>Two calls to a decision-ready proposal</h3>
+              <p>Two transcripts became a value proposition and ROI case grounded closely enough that the prospect called out the synthesis himself.</p>
+              <div class="asset-links"><a href="assets/rosen-value-proposition.pdf" target="_blank">Open the proposal</a></div>
+            </article>
+
+            <article class="proof-card">
+              <div class="tag">InnoVami &middot; under 4 hours</div>
+              <h3>Research, scope, pricing, and the sent proposal</h3>
+              <p>A longshot lead triggered background research, a bottom-up scope model, an executive brief, and the final commercial proposal.</p>
+              <div class="asset-links">
+                <a href="assets/innovami-value-pricing-brief.docx">Research brief</a>
+                <a href="assets/innovami-scope-calculator.pdf" target="_blank">Decision brief</a>
+                <a href="assets/innovami-scope-calculator.xlsx">Working calculator</a>
+                <a href="assets/innovami-value-proposal.pdf" target="_blank">Sent proposal</a>
+              </div>
+            </article>
+          </div>
+        </article>
+
+        <article class="stage-panel" id="stage-panel-5" role="tabpanel" aria-labelledby="stage-tab-5" data-panel="5" hidden>
+          <div class="stage-panel-header">
+            <div>
+              <div class="stage-kicker">Stage 5 &middot; Sales assets</div>
+              <h2>Use the next asset to remove the exact reason the deal is stuck.</h2>
+            </div>
+            <span class="stage-chip">Demos and proposals</span>
+          </div>
+          <div class="stage-two-col">
+            <div>
+              <p>After a meeting, the transcript can generate the follow-up email, the story for an asynchronous demo, and the supporting proposal or value case. The asset is built around the objection that actually appeared in the conversation, not around a generic product tour.</p>
+              <p>In this example, I recorded a Loom demo after the meeting and sent it in a transcript-grounded follow-up email. The demonstration ran through the product's capabilities using the prospect's own data.</p>
+              <p>They had already said no because they believed their unique custom environment would be too complicated and our software could not handle it. The follow-up changed the decision and opened a proof-of-value engagement.</p>
+            </div>
+            <div class="stage-callout">
+              <div class="tag">A no became a proof of value</div>
+              <h3>Transcript &rarr; follow-up email &rarr; async demo on their data &rarr; proof of value</h3>
+              <p>The engine room supplied the objection and the wording. The sales asset answered the objection with evidence the prospect could review on their own time.</p>
+              <div class="asset-links">
+                <a href="https://www.loom.com/share/ee111306e7ad465eb4d46fda247a0cfa" target="_blank" rel="noopener">Watch the Loom demo</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="stage-panel" id="stage-panel-6" role="tabpanel" aria-labelledby="stage-tab-6" data-panel="6" hidden>
+          <div class="stage-panel-header">
+            <div>
+              <div class="stage-kicker">Stage 6 &middot; Marketing and learning</div>
+              <h2>Turn commercial knowledge into company visibility, personal reach, and better next bets.</h2>
+            </div>
+            <span class="stage-chip">Marketing engine</span>
+          </div>
+          <p>This stage is broader than company content. The engine room supplies real pains, language, objections, and proof. From the same knowledge base, the system produces company assets such as use-case pages, newsletters, infographics, and carousels, as well as personal posts that build visibility, credibility, and networking opportunities.</p>
+          <p>CRM engagement and website analytics create an evidence trail for which messages, pages, and posts are working. Sales conversations supply the raw material. Performance data tells us what to develop next and which signal should start the next trip around the loop.</p>
+          <p>Production runs through brand tokens, reusable HTML patterns, and repeatable export. These are current outputs from that factory:</p>
+
+          <div class="factory-assets">
+            <div class="factory-asset">
+              <div class="flabel"><strong>LinkedIn quote card</strong> &middot; as used</div>
+              <img class="asset-inline" src="assets/linkedin-quote-card.png" alt="LinkedIn quote card">
+            </div>
+
+            <div class="factory-asset">
+              <div class="flabel"><strong>OTIF infographic</strong> &middot; in development</div>
+              <img class="asset-inline clickable" src="assets/otif-infographic.png" alt="OTIF infographic" onclick="openLightbox('assets/otif-infographic.png', this.alt)">
+              <span class="zoom-hint">Click to expand</span>
+            </div>
+
+            <div class="factory-asset">
+              <div class="flabel"><strong>LinkedIn carousel</strong> &middot; all 9 slides</div>
+              <div class="li-carousel-wrap">
+                <button class="li-nav prev" type="button" aria-label="Scroll left" onclick="scrollCarousel(-1)">&larr;</button>
+                <div class="li-carousel" id="liCarousel">
+                  <div class="li-slide"><img src="assets/carousel-slides/slide-1.png" alt="Carousel slide 1"></div>
+                  <div class="li-slide"><img src="assets/carousel-slides/slide-2.png" alt="Carousel slide 2"></div>
+                  <div class="li-slide"><img src="assets/carousel-slides/slide-3.png" alt="Carousel slide 3"></div>
+                  <div class="li-slide"><img src="assets/carousel-slides/slide-4.png" alt="Carousel slide 4"></div>
+                  <div class="li-slide"><img src="assets/carousel-slides/slide-5.png" alt="Carousel slide 5"></div>
+                  <div class="li-slide"><img src="assets/carousel-slides/slide-6.png" alt="Carousel slide 6"></div>
+                  <div class="li-slide"><img src="assets/carousel-slides/slide-7.png" alt="Carousel slide 7"></div>
+                  <div class="li-slide"><img src="assets/carousel-slides/slide-8.png" alt="Carousel slide 8"></div>
+                  <div class="li-slide"><img src="assets/carousel-slides/slide-9.png" alt="Carousel slide 9"></div>
+                </div>
+                <button class="li-nav next" type="button" aria-label="Scroll right" onclick="scrollCarousel(1)">&rarr;</button>
+              </div>
+              <div class="li-carousel-hint">Drag or scroll sideways.</div>
+            </div>
+
+            <div class="factory-asset">
+              <div class="flabel"><strong>Email newsletter issue 01</strong> &middot; live draft preview</div>
+              <div class="newsletter-embed">
+                <iframe src="assets/newsletter-draft.html" title="Newsletter issue 01 draft" loading="lazy"></iframe>
+              </div>
+              <a class="embed-openlink" href="assets/newsletter-draft.html" target="_blank">Open full size &rarr;</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>The rails beneath every stage</h2>
+    <div class="rail-grid">
+      <div class="rail-card">
+        <div class="tag">Design system</div>
+        <h3>The brand is code, not a paragraph</h3>
+        <p>CSS tokens for colors and type. Reusable HTML patterns. Rule files the agent must load before producing anything visual. Repeatable rendering and export. The constraints live in the files, so the output cannot casually drift.</p>
+      </div>
+      <div class="rail-card">
+        <div class="tag">Guardrails</div>
+        <h3>Every claim keeps its receipts</h3>
+        <p>Stats and quotes are tagged by provenance and publication status. Pre-send checks block unsupported claims and sensitive material. Feedback becomes a permanent rule, so the same correction does not return wearing a new hat.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="quote-big">
+      Most companies run marketing and sales as two teams guessing at each other. This runs them as one loop where every conversation makes the next one cheaper, faster, and better grounded.
+    </div>
+  </section>
+
+  <div class="cta-row">
+    <a class="btn" href="ampere.html">Point the system at Ampere &rarr;</a>
+  </div>
+
+  <div class="meta-note">
+    <span class="label">How this page was made</span>
+    The engine room built this pitch from our call. The stages around it find the next conversation, prepare it, turn it into finished work, measure the result, and feed the next search. One machine. One loop.
+  </div>
+</main>
+
+<footer>Built by Adam Broniewski from the 2026-07-15 call transcript. Private: contains quotes from that call, not for redistribution.</footer>
+
+<div class="lightbox-overlay" id="lightbox" onclick="closeLightbox(event)">
+  <button class="lightbox-close" type="button" aria-label="Close" onclick="closeLightbox(event)">&times;</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<script>
+  (function () {
+    var loop = document.getElementById('interactiveLoop');
+    var tabs = Array.prototype.slice.call(loop.querySelectorAll('.loop-node'));
+    var panels = Array.prototype.slice.call(loop.querySelectorAll('.stage-panel'));
+
+    function updateConnector(tab) {
+      var loopRect = loop.getBoundingClientRect();
+      var tabRect = tab.getBoundingClientRect();
+      var center = tabRect.left - loopRect.left + (tabRect.width / 2);
+      loop.style.setProperty('--active-x', center + 'px');
+    }
+
+    function selectStage(tab, moveFocus) {
+      var stage = tab.getAttribute('data-stage');
+
+      tabs.forEach(function (item) {
+        var selected = item === tab;
+        item.classList.toggle('active', selected);
+        item.setAttribute('aria-selected', selected ? 'true' : 'false');
+        item.setAttribute('tabindex', selected ? '0' : '-1');
+        var action = item.querySelector('.node-action');
+        if (action) action.textContent = selected ? 'Open now' : 'Open stage';
+      });
+
+      panels.forEach(function (panel) {
+        var selected = panel.getAttribute('data-panel') === stage;
+        panel.hidden = !selected;
+        panel.classList.toggle('active', selected);
+      });
+
+      updateConnector(tab);
+      if (moveFocus) tab.focus();
+    }
+
+    tabs.forEach(function (tab, index) {
+      tab.addEventListener('click', function () {
+        selectStage(tab, false);
+      });
+
+      tab.addEventListener('keydown', function (event) {
+        var nextIndex = index;
+        if (event.key === 'ArrowRight' || event.key === 'ArrowDown') nextIndex = (index + 1) % tabs.length;
+        if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') nextIndex = (index - 1 + tabs.length) % tabs.length;
+        if (event.key === 'Home') nextIndex = 0;
+        if (event.key === 'End') nextIndex = tabs.length - 1;
+        if (nextIndex !== index) {
+          event.preventDefault();
+          selectStage(tabs[nextIndex], true);
+        }
+      });
+    });
+
+    function placeConnector() {
+      var active = loop.querySelector('.loop-node.active');
+      if (active) updateConnector(active);
+    }
+
+    window.addEventListener('resize', placeConnector);
+    window.addEventListener('load', placeConnector);
+    placeConnector();
+  }());
+
+  function openLightbox(src, alt) {
+    var overlay = document.getElementById('lightbox');
+    var img = document.getElementById('lightboxImg');
+    img.src = src;
+    img.alt = alt || '';
+    overlay.classList.add('open');
+  }
+
+  function closeLightbox(event) {
+    if (event.target.id === 'lightboxImg') return;
+    document.getElementById('lightbox').classList.remove('open');
+    document.getElementById('lightboxImg').src = '';
+  }
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+      document.getElementById('lightbox').classList.remove('open');
+    }
+  });
+
+  function scrollCarousel(direction) {
+    var carousel = document.getElementById('liCarousel');
+    if (carousel) carousel.scrollBy({ left: direction * 220, behavior: 'smooth' });
+  }
+</script>
+</body>
+</html>
