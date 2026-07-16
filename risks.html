@@ -8,39 +8,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<style>
-  .risk > div:last-child { flex: 1; min-width: 0; }
-  .risk-metric {
-    margin-top: 18px;
-    padding: 15px 17px;
-    border: 1px solid rgba(248,113,113,.28);
-    border-radius: 11px;
-    background: rgba(248,113,113,.055);
-  }
-  .risk-metric + .risk-metric { margin-top: 10px; }
-  .risk-metric-value {
-    font-family: 'Space Grotesk', 'Inter', sans-serif;
-    color: var(--bad);
-    font-size: clamp(1.15rem, 2.5vw, 1.45rem);
-    line-height: 1.15;
-    font-weight: 700;
-    letter-spacing: -.01em;
-  }
-  .risk-metric-label {
-    margin-top: 6px;
-    color: var(--ink-dim);
-    font-size: .83rem;
-    line-height: 1.5;
-    max-width: 66ch;
-  }
-  .risk-note {
-    margin-top: 10px;
-    color: var(--ink-dim);
-    font-size: .78rem;
-    line-height: 1.5;
-    font-style: italic;
-  }
-</style>
 </head>
 <body>
 <nav>
@@ -65,17 +32,13 @@
     <p class="lede">Nothing on this page is invented. Every risk is something you said, taken one step forward using your own numbers.</p>
   </section>
 
-  <section aria-label="Six risks">
+  <section>
     <div class="risk">
       <div class="step-num">1</div>
       <div>
         <h3>The speed story expires on schedule</h3>
         <p><span class="said">"We're about to fill our entire pipeline for the next year. So we won't be fast soon. And then everyone's going to forget about us for a year."</span></p>
-        <p>Once the pipeline fills, Ampere enters a positioning gap: "fast" stops being true, and the replacement value proposition doesn't exist yet.</p>
-        <div class="risk-metric">
-          <div class="risk-metric-value">12 MONTHS</div>
-          <div class="risk-metric-label">The period in which the current sales story stops working, according to your own forecast.</div>
-        </div>
+        <p>Once the pipeline fills, Ampere enters a positioning gap: "fast" stops being true, and the replacement value proposition doesn't exist yet. According to your own forecast, that's <strong>12 months</strong> before the current sales story stops working.</p>
       </div>
     </div>
 
@@ -100,10 +63,7 @@
       <div>
         <h3>The US team ramps against a moving target</h3>
         <p>The plan is to replace the agent channel with an internal team. That team needs to understand the portfolio, present it professionally, and have approved assets from day one. Weak enablement doesn't cost the savings directly. It delays the strategy that creates them.</p>
-        <div class="risk-metric">
-          <div class="risk-metric-value">$12M TO ONE AGENT, ON ONE PROJECT</div>
-          <div class="risk-metric-label">Your own example from the call. Every month the internal team isn't ready to take over is another month the agent channel keeps earning its percentage.</div>
-        </div>
+        <p>Your own example from the call: <strong>$12M to one agent, on one project</strong>. Every month the internal team isn't ready to take over is another month the agent channel keeps earning its percentage.</p>
         <p><strong>The internal team doesn't need to be cheap. It only needs to cost less than that.</strong></p>
       </div>
     </div>
@@ -122,10 +82,7 @@
       <div>
         <h3>You become the permanent integration layer</h3>
         <p>Each acquisition adds websites, decks, approval chains, value propositions, and sales questions. Your last-mile bottleneck stops being a bad month and becomes structural. And a website rebuilt today WITHOUT modular content and source links is just the next expensive migration waiting for the next acquisition.</p>
-        <div class="risk-metric">
-          <div class="risk-metric-value">TWO WEEKS ALREADY SPENT</div>
-          <div class="risk-metric-label">On websites, deck layouts, recolored images, and an AI design system that made output worse. Before the wider group system has even been built.</div>
-        </div>
+        <p>You have already spent roughly <strong>two weeks</strong> on websites, deck layouts, recolored images, and an AI design system that made output worse. Before the wider group system has even been built.</p>
         <p>The question isn't what two weeks of your time cost. It's what those two weeks would have been worth on a $120M deal, with a president, or on the next acquisition.</p>
       </div>
     </div>
